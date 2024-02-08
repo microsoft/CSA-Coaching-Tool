@@ -1,0 +1,39 @@
+<appaction uniquename="mshack__CreateHackTeam!04e4c66aec5f457c885e1908ca2441a7!mshack_HackTracker!contact!1">
+  <appmoduleid>
+    <uniquename>mshack_HackTracker</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Create Hack Team">
+    <label description="Create Hack Team" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>contact</logicalname>
+  </contextentity>
+  <contextvalue>contact</contextvalue>
+  <hidden>0</hidden>
+  <iconwebresourceid>
+    <webresourceid>861bc275-413c-4657-a8d7-1bd43274499d</webresourceid>
+  </iconwebresourceid>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>1</location>
+  <name>CreateHackTeam!04e4c66aec5f457c885e1908ca2441a7</name>
+  <onclickeventjavascriptfunctionname>createHackTeam</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":23}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>692d44ca-e07d-ee11-8179-000d3a1ba68c</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>1000100022.5000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibraryid>
+    <name>mshack_hacktrackerdefaultcommandlibrary_1bde3</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>a23e0021a1db488bbbdea910769b702d</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>

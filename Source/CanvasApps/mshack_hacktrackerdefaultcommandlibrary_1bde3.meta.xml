@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>mshack_hacktrackerdefaultcommandlibrary_1bde3</Name>
+  <AppVersion>2023-11-17T18:08:45Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.23105.18.0</CreatedByClientVersion>
+  <MinClientVersion>0.0.0.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","sienaVersion":"20231117T163541Z-3.23105.18.0","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.23104.18","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","showStatusBar":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(251,101,60,1)</BackgroundColor>
+  <DisplayName>HackTracker_DefaultCommandLibrary</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage>Saved by Command designer.</CommitMessage>
+  <Publisher></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"Contacts":{"entitySetName":"contacts","logicalName":"contact"},"Accounts":{"entitySetName":"accounts","logicalName":"account"},"Use Cases":{"entitySetName":"mshack_usecases","logicalName":"mshack_usecase"},"Hack Teams":{"entitySetName":"mshack_hackteams","logicalName":"mshack_hackteam"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>1</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"contact","componenttype":1},{"logicalname":"account","componenttype":1},{"logicalname":"mshack_usecase","componenttype":1},{"logicalname":"mshack_hackteam","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/mshack_hacktrackerdefaultcommandlibrary_1bde3_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/mshack_hacktrackerdefaultcommandlibrary_1bde3_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

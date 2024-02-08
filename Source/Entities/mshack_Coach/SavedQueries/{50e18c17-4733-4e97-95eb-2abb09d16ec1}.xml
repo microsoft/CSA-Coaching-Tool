@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{50e18c17-4733-4e97-95eb-2abb09d16ec1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
+        <row name="result" id="mshack_coachid">
+          <cell name="mshack_name" width="162" />
+          <cell name="mshack_timezoneevent" width="132" />
+          <cell name="mshack_preferredcustomers" width="165" />
+          <cell name="mshack_ou" width="100" />
+          <cell name="emailaddress" width="123" />
+          <cell name="mshack_registrationdate" width="139" />
+          <cell name="mshack_registrationid" width="127" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="mshack_coach">
+          <attribute name="mshack_coachid" />
+          <attribute name="mshack_name" />
+          <order attribute="mshack_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="mshack_timezoneevent" />
+          <attribute name="mshack_preferredcustomers" />
+          <attribute name="mshack_ou" />
+          <attribute name="mshack_registrationdate" />
+          <attribute name="emailaddress" />
+          <attribute name="mshack_registrationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Coaches" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1d80a3ce-cb6d-479d-b4ef-2a8535cdc4b1}</savedqueryid>
+    <layoutxml>
+      <grid name="mshack_usecases" jump="mshack_name" select="1" icon="1" preview="0">
+        <row name="mshack_usecase" id="mshack_usecaseid">
+          <cell name="mshack_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="mshack_description" width="106" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="mshack_usecase">
+          <attribute name="mshack_usecaseid" />
+          <attribute name="mshack_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="mshack_description" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Use Case Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

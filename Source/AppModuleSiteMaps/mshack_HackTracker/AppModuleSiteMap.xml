@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>mshack_HackTracker</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="area_tracking" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Tracking" />
+      </Titles>
+      <Group Id="group_f2ce6e28" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Intake" />
+        </Titles>
+        <SubArea Id="subarea_43fe0004" VectorIcon="/WebResources/SharePointIcon_helpFile_s.svg" Icon="/WebResources/SharePointIcon_helpFile_s.svg" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" Page="mshack_attachaccounts_3bd71">
+          <Titles>
+            <Title LCID="1033" Title="Attach Accounts" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_c7d14210" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/TeamManagement_HighContrast.svg" Icon="/WebResources/AppCommon/ControlWS/SummaryPageImages/TeamManagement_HighContrast.svg" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" Page="mshack_createteams_3325a">
+          <Titles>
+            <Title LCID="1033" Title="Create Teams" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="group_tracking" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Tracking" />
+        </Titles>
+        <SubArea Id="subarea_78c7d5de" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="contact" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Participants" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_4ded8f50" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="mshack_hackteam" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_313aaef1" VectorIcon="/WebResources/msdyn_/Icons/SolutionHealthAppModule.svg" Icon="/WebResources/msdyn_/Icons/SolutionHealthAppModule.svg" Entity="mshack_usecase" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_73ffc7b2" VectorIcon="/WebResources/AppCommon/ControlWS/HeaderIconImages/TeamManagement.svg" Icon="/WebResources/AppCommon/ControlWS/HeaderIconImages/TeamManagement.svg" Entity="mshack_activityattendance" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+      <Group Id="group_setup" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Setup" />
+        </Titles>
+        <SubArea Id="subarea_6af7de1b" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="mshack_coach" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_124249a1" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_8c7ba312" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="mshack_hackactivities" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Hack Tracker" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

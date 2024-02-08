@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{8730e4e1-237f-ee11-8179-000d3a190bdf}</formid>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{566697a3-f575-4085-85ea-d513c12410bf}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{1611e985-fdfd-4a45-a663-4825255e779e}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{08f2947a-841b-40fc-ad8f-a6c2109e6b74}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{599acd7a-7753-4d17-a1f5-9467ba33e285}" locklevel="0" colspan="1" rowspan="1" labelid="{1d6ec30b-1398-43b5-a0e4-b75388961c49}">
+                        <labels>
+                          <label description="Display Name" languagecode="1033" />
+                        </labels>
+                        <control id="displayname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="displayname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12d38297-9b2e-4a7b-96ee-a4bfe052d46f}" locklevel="0" colspan="1" rowspan="1" labelid="{ce542fe0-d5b2-4b3c-8c82-68f2e8a2ca3d}">
+                        <labels>
+                          <label description="Job Title" languagecode="1033" />
+                        </labels>
+                        <control id="jobtitle" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="jobtitle" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{77db2bf9-8861-406e-9a77-b1ca72355967}" locklevel="0" colspan="1" rowspan="1" labelid="{c4ede28d-34fd-4f58-93b6-672ed85fedae}">
+                        <labels>
+                          <label description="Mail" languagecode="1033" />
+                        </labels>
+                        <control id="mail" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{536e7a9a-6456-4af2-8196-0e13c4c70e11}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="ImAddresses" languagecode="1033" />
+                        </labels>
+                        <control id="imaddresses" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="imaddresses" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b3ec3f29-9e19-4929-9c51-951d4056d300}" locklevel="0" colspan="1" rowspan="1" labelid="{3baf9172-99e7-47e4-ab3b-b08538200890}">
+                        <labels>
+                          <label description="Office Location" languagecode="1033" />
+                        </labels>
+                        <control id="officelocation" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="officelocation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cfc99c66-ea45-4fcd-9352-939e189893be}" locklevel="0" colspan="1" rowspan="1" labelid="{e8c4ec57-ad32-4b2a-bb59-f875889347ba}">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control id="city" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="city" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9fad624e-e805-47d8-85ca-078aa1368666}" locklevel="0" colspan="1" rowspan="1" labelid="{bbfe2e1c-91d3-4571-b7bf-f2d1bab30548}">
+                        <labels>
+                          <label description="Business Phones" languagecode="1033" />
+                        </labels>
+                        <control id="businessphones" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="businessphones" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Microsoft Entra Identity quick view form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

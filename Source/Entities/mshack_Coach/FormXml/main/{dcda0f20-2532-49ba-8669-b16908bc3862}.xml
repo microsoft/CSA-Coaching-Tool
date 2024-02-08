@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{dcda0f20-2532-49ba-8669-b16908bc3862}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{6ca4cc43-d5d2-4165-94bd-359237a3d589}" IsUserDefined="1" name="tab_general" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{8b8f2fd5-e3d2-45f7-8b50-2e7972b783bc}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{15b9be72-fa45-4abd-8d9b-f2d967d21860}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mshack_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4451ef7f-8dc5-42b7-9e31-25a4c2c86603}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email Address" languagecode="1033" />
+                        </labels>
+                        <control id="emailaddress" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="emailaddress" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{20b44a07-89dd-4b40-8cf9-4232557edc68}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="OU" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_ou" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_ou" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b64498e4-f16d-4843-9d98-6bd0692c8e14}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Preferred Customer(s)" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_preferredcustomers" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_preferredcustomers" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_general_section_4" id="003e88f9-91ab-4f06-8eac-e6d8384cbef4" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{1c7b4c4b-c598-4377-b9a2-0022f37b74ce}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Timezone Event" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_timezoneevent" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mshack_timezoneevent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{29dc2c5b-4787-4305-995e-eac3c2d2ceb1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Registration Date" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_registrationdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="mshack_registrationdate" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{42e4f457-ecec-43ce-8d75-95026bd0c998}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Registration ID" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_registrationid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_registrationid" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{c1fffa02-b9cc-4e74-87cb-391441ae2c84}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{3c018d88-f1b0-47a1-af93-4df4810144a6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1cbdd2d0-2d98-422f-b08a-72f70019fb9b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fd244d8e-e5ef-47ec-8b7e-e1a59d07a2ee}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7665d84a-0f88-4d0a-8236-174623996989}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{04061d23-f970-402d-9530-217d86325f76}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{d01175ee-fd8e-4876-acca-339de2e9c104}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{19d25cf9-8a24-43e7-9795-c2dca491f98b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{478fe712-a5fb-448f-9f53-e5a8b7b6a10a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.23103.264" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>HackTracker</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Hack Tracker" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.22</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>MSHack</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="MS Hack" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>mshack</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>80857</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="aaduser" behavior="1" />
+      <RootComponent type="1" schemaName="account" behavior="2" />
+      <RootComponent type="1" schemaName="contact" behavior="2" />
+      <RootComponent type="1" schemaName="mshack_activityattendance" behavior="0" />
+      <RootComponent type="1" schemaName="mshack_coach" behavior="0" />
+      <RootComponent type="1" schemaName="mshack_hackactivities" behavior="0" />
+      <RootComponent type="1" schemaName="mshack_hackteam" behavior="0" />
+      <RootComponent type="1" schemaName="mshack_usecase" behavior="0" />
+      <RootComponent type="20" id="{27b51010-e85e-ee11-be6f-000d3a314c24}" behavior="0" />
+      <RootComponent type="20" id="{6ea05a25-2883-ee11-8179-000d3a190bdf}" behavior="0" />
+      <RootComponent type="29" id="{0721da05-e55e-ee11-be6f-000d3a314d17}" behavior="0" />
+      <RootComponent type="29" id="{1a09b78a-9888-ee11-8179-000d3a1ba0d6}" behavior="0" />
+      <RootComponent type="29" id="{45821b27-7c84-ee11-8179-000d3a190bdf}" behavior="0" />
+      <RootComponent type="29" id="{4d5e0ec8-1283-ee11-8179-000d3a190bdf}" behavior="0" />
+      <RootComponent type="29" id="{7fd9fba2-9788-ee11-8179-000d3a1ba0d6}" behavior="0" />
+      <RootComponent type="29" id="{80d59192-4c7f-ee11-8179-000d3a190bdf}" behavior="0" />
+      <RootComponent type="29" id="{83e2d044-8088-ee11-8179-000d3a1c017f}" behavior="0" />
+      <RootComponent type="29" id="{9fefa15d-9690-ee11-8179-000d3a1ba0d6}" behavior="0" />
+      <RootComponent type="29" id="{d0e4aae0-9790-ee11-8178-000d3a102604}" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_accountlookup_256cb" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_attachaccounts_3bd71" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_createteams_3325a" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_hacktrackerdefaultcommandlibrary_1bde3" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_opportunitylookup_f5faf" behavior="0" />
+      <RootComponent type="61" schemaName="mshack_createHackTeam.js" behavior="0" />
+      <RootComponent type="61" schemaName="mshack_idea.png" behavior="0" />
+      <RootComponent type="61" schemaName="mshack_list-1.png" behavior="0" />
+      <RootComponent type="61" schemaName="mshack_OpenAccountCustomPage.js" behavior="0" />
+      <RootComponent type="61" schemaName="mshack_OpenAccountCustomPageFromGrid.js" behavior="0" />
+      <RootComponent type="61" schemaName="mshack_OpenOppCustomPage.js" behavior="0" />
+      <RootComponent type="61" schemaName="mshack_share-2.png" behavior="0" />
+      <RootComponent type="62" schemaName="mshack_HackTracker" behavior="0" />
+      <RootComponent type="62" schemaName="mshack_test" behavior="0" />
+      <RootComponent type="80" schemaName="mshack_HackTracker" behavior="0" />
+      <RootComponent type="9" schemaName="mshack_hackparticipantstatus" behavior="0" />
+      <RootComponent type="9" schemaName="mshack_presentationtimeslot" behavior="0" />
+      <RootComponent type="9" schemaName="mshack_timezoneevent" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="aaduser" displayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="1" schemaName="aaduser" displayName="Microsoft Entra ID" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aaduser" displayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="10" schemaName="mshack_mshack_coach_AADUserId_aaduser" displayName="mshack_mshack_coach_AADUserId_aaduser" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aaduser" displayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="60" displayName="Microsoft Entra Identity quick view form" parentDisplayName="Microsoft Entra ID" id="{8730e4e1-237f-ee11-8179-000d3a190bdf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="aaduserid" displayName="Id" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="10" schemaName="mshack_mshack_coach_AADUserId_aaduser" displayName="mshack_mshack_coach_AADUserId_aaduser" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="businessphones" displayName="Business Phones" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="60" displayName="Microsoft Entra Identity quick view form" parentDisplayName="Microsoft Entra ID" id="{8730e4e1-237f-ee11-8179-000d3a190bdf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="city" displayName="City" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="60" displayName="Microsoft Entra Identity quick view form" parentDisplayName="Microsoft Entra ID" id="{8730e4e1-237f-ee11-8179-000d3a190bdf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="displayname" displayName="Display Name" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="10" schemaName="mshack_mshack_coach_AADUserId_aaduser" displayName="mshack_mshack_coach_AADUserId_aaduser" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="displayname" displayName="Display Name" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="60" displayName="Microsoft Entra Identity quick view form" parentDisplayName="Microsoft Entra ID" id="{8730e4e1-237f-ee11-8179-000d3a190bdf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="imaddresses" displayName="ImAddresses" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="60" displayName="Microsoft Entra Identity quick view form" parentDisplayName="Microsoft Entra ID" id="{8730e4e1-237f-ee11-8179-000d3a190bdf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="jobtitle" displayName="Job Title" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="60" displayName="Microsoft Entra Identity quick view form" parentDisplayName="Microsoft Entra ID" id="{8730e4e1-237f-ee11-8179-000d3a190bdf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="mail" displayName="Mail" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="60" displayName="Microsoft Entra Identity quick view form" parentDisplayName="Microsoft Entra ID" id="{8730e4e1-237f-ee11-8179-000d3a190bdf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="officelocation" displayName="Office Location" parentSchemaName="aaduser" parentDisplayName="Microsoft Entra ID" solution="MetadataExtension (1.0.2.78)" />
+        <Dependent type="60" displayName="Microsoft Entra Identity quick view form" parentDisplayName="Microsoft Entra ID" id="{8730e4e1-237f-ee11-8179-000d3a190bdf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/ControlWS/SummaryPageImages/TeamManagement_HighContrast.svg" displayName="AppCommon/ControlWS/SummaryPageImages/TeamManagement_HighContrast.svg" solution="msdynce_AppCommon (9.0.4.0066)">
+          <package>msdynce_AppCommonAnchor (9.0.23103.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="mshack_HackTracker" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Icons/SolutionHealthAppModule.svg" displayName="msdyn_/Icons/SolutionHealthAppModule.svg" solution="msdyn_PowerAppsChecker (2.0.0.8)">
+          <package>msdyn_PowerAppsCheckerAnchor (2.0.0.8)</package>
+        </Required>
+        <Dependent type="62" schemaName="mshack_HackTracker" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="mshack_HackTracker" displayName="Hack Tracker" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="dce_DCEPCF.PolyLookup" displayName="dce_DCEPCF.PolyLookup" solution="dce_pcfcomponents (1.0.3.0)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Hack Team" id="{c34e2894-bc51-4ade-93b9-3967e711548c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2310.3029)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Hack Team" id="{c34e2894-bc51-4ade-93b9-3967e711548c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2310.3029)" />
+        <Dependent type="68" id="{6c84dc07-a516-4e39-889a-9c61576504ce}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2310.3029)" />
+        <Dependent type="68" id="{8eb87ee1-8989-4d12-b921-fbda02bf255f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2310.3029)" />
+        <Dependent type="68" id="{a9b608f6-1d73-4725-ba3f-ed4a040bdf32}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2310.3029)" />
+        <Dependent type="60" displayName="Hack Participant" parentDisplayName="Contact" id="{df30b480-c95e-ee11-be6f-000d3a3140c3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2310.3029)" />
+        <Dependent type="68" id="{6c84dc07-a516-4e39-889a-9c61576504ce}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2310.3029)" />
+        <Dependent type="68" id="{f368e693-2a01-4167-ac78-3e6bb444b2c3}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

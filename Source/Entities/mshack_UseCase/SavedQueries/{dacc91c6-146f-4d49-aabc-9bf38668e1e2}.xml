@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{dacc91c6-146f-4d49-aabc-9bf38668e1e2}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
+        <row name="result" id="mshack_usecaseid">
+          <cell name="mshack_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="mshack_description" width="106" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="mshack_usecase">
+          <attribute name="mshack_usecaseid" />
+          <attribute name="mshack_name" />
+          <attribute name="createdon" />
+          <order attribute="mshack_name" descending="false" />
+          <attribute name="mshack_description" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Use Case Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

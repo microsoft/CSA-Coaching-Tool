@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{fa229d80-34e5-4fb2-8a45-a50df4a70d11}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{3aaefc1d-fa41-4053-8046-01398f9f65db}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{5badff5f-7046-498e-94c2-ff7a3fedf615}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{173e1781-3a4e-44a2-8a61-bc2b920082f0}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mshack_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ae0847d-3328-4159-b7f6-5a598510b891}" locklevel="0" rowspan="6" colspan="1">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_description" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="mshack_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{d1419bd4-60b1-43e1-a646-8a3d057a1637}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Hack Team" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_hackteamid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_hackteamid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{eeb3a97a-2d74-4a0f-ba94-0813f8775c9c}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1699568205129" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1699568205129" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="mshack_hackteamid">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="mshack_hackteam"&gt;07aada1e-a0ff-44ca-9637-f98726c7ac7b&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5e69f505-b347-40e0-8c7d-0baf4c6e2583}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_393" id="65e9cdcb-610f-4876-b883-85bfeed5d280" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Use &quot;Attach Opportunity&quot; button to set these values" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{3c885f74-ebb1-42aa-8a7e-67d4c4ecfa54}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_opportunityname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_opportunityname" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0eed9190-8389-46fa-9f50-1330c6ab8d4a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity ID" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_opportunityid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_opportunityid" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3e7eb88d-c26a-4432-9986-6657aa415728}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity URL" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_opportunityurl" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_opportunityurl" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{0c137fa6-93b4-42e1-9c81-16ab22eb3ac0}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c7ce0297-d226-46dc-8b1d-fb1e9325bfce}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{dee0dcdf-6c71-44d7-9373-5b1f08837500}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ae68c41e-4add-46e5-880a-dbbbb7f4ff02}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{08c41297-104d-44a5-92a6-22b48cbfebfa}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{07876256-61bd-40b8-bc65-87b43ad5a27e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fe6bcc8c-d356-4aee-8766-5163a8788655}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2424bd71-a72a-4f4f-8311-506ec40ab0d5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{34416db9-34a1-498a-ba9c-38d20f7ae0b2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

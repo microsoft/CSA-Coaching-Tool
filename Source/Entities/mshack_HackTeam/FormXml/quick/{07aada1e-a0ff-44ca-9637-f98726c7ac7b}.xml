@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{07aada1e-a0ff-44ca-9637-f98726c7ac7b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{9dee6734-92e3-4250-ab67-5b00be084384}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{d33dfd80-df73-4e78-aa8c-b8fda2473916}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{324dd8c8-35cc-4a8f-800d-03f7ffdce38f}" visible="true">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mshack_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0cd83356-3567-4573-93a8-be12089e4982}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6dac72ab-7f1e-4f09-8cdc-d738514a6d9c}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Coach Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_coachname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_coachname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{464328fc-3c40-4f42-9b5f-e6d53ff4f862}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Teams Channel" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_teamschannel" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_teamschannel" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

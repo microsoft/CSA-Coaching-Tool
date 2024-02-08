@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{6f95e2b3-1f8f-ee11-8179-000d3a1c017f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fullname" select="1" icon="1" preview="1">
+        <row name="result" id="contactid">
+          <cell name="fullname" width="145" />
+          <cell name="mshack_companyname" width="205" />
+          <cell name="mshack_participantstatus" width="139" />
+          <cell name="mshack_registrationdate" width="139" />
+          <cell name="mshack_hackteamid" width="237" />
+          <cell name="a_5370c65f47ee4270a89d42ded3a56348.mshack_coachname" width="128" />
+          <cell name="a_f5fff0d1a5f2400cb498afd29eacccb7.name" width="155" />
+          <cell name="a_f5fff0d1a5f2400cb498afd29eacccb7.mshack_ou" width="167" />
+          <cell name="a_f5fff0d1a5f2400cb498afd29eacccb7.mshack_tpid" width="178" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="contact">
+          <attribute name="fullname" />
+          <attribute name="contactid" />
+          <attribute name="mshack_hackteamid" />
+          <order attribute="fullname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity alias="a_5370c65f47ee4270a89d42ded3a56348" name="mshack_hackteam" to="mshack_hackteamid" from="mshack_hackteamid" link-type="outer" visible="false">
+            <attribute name="mshack_coachname" />
+          </link-entity>
+          <link-entity alias="a_f5fff0d1a5f2400cb498afd29eacccb7" name="account" to="mshack_parentcompanyid" from="accountid" link-type="outer" visible="false">
+            <attribute name="name" />
+            <attribute name="mshack_ou" />
+            <attribute name="mshack_tpid" />
+          </link-entity>
+          <attribute name="mshack_participantstatus" />
+          <attribute name="mshack_registrationdate" />
+          <attribute name="mshack_companyname" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.20</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Registrants" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="All registrants regardless of status or team" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

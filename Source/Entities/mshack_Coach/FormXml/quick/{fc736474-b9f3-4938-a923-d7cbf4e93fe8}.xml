@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{fc736474-b9f3-4938-a923-d7cbf4e93fe8}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{b3ff653b-216f-4d8c-95b9-630bf3a36dee}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{715c6438-34d4-442b-acb8-85dd385e8b7c}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1a569904-a068-454c-96bf-495c770f7188}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mshack_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7cec2ccf-2885-4605-bf46-6a32ce3f2449}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{158af0f7-e9ac-4bb1-9818-fb4dd32faa07}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email Address" languagecode="1033" />
+                        </labels>
+                        <control id="emailaddress" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="emailaddress" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e581455d-9466-40bb-b249-cad9c8b10b93}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="OU" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_ou" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_ou" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ade98bdb-36bc-41ee-842f-3750a2446593}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Timezone Event" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_timezoneevent" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mshack_timezoneevent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e4b65afe-2d63-4ccb-b1a5-68754ea121d0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Preferred Customer(s)" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_preferredcustomers" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_preferredcustomers" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

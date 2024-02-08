@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{9fd44d5e-287d-ee11-8179-6045bdeeb820}</WebResourceId>
+  <Name>mshack_OpenAccountCustomPage.js</Name>
+  <DisplayName>OpenAccountCustomPage.js</DisplayName>
+  <LanguageCode>0</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.3</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/mshack_OpenAccountCustomPagejs9FD44D5E-287D-EE11-8179-6045BDEEB820</FileName>
+</WebResource>

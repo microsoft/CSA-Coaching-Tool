@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{96bbd685-81dd-48a3-82c7-403931112277}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
+        <row name="result" id="mshack_hackteamid">
+          <cell name="mshack_name" width="237" />
+          <cell name="mshack_coachname" width="172" />
+          <cell name="mshack_teamschannel" width="300" />
+          <cell name="mshack_accountid" width="203" />
+          <cell name="createdon" width="125" />
+          <cell name="modifiedon" width="113" />
+          <cell name="modifiedby" width="112" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="mshack_hackteam">
+          <attribute name="mshack_name" />
+          <attribute name="createdon" />
+          <order attribute="mshack_name" descending="false" />
+          <attribute name="mshack_coachname" />
+          <attribute name="mshack_teamschannel" />
+          <attribute name="mshack_hackteamid" />
+          <attribute name="mshack_accountid" />
+          <attribute name="modifiedby" />
+          <attribute name="modifiedon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Hack Team Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

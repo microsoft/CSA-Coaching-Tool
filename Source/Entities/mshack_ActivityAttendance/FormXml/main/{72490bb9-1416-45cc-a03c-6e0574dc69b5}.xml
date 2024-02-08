@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{72490bb9-1416-45cc-a03c-6e0574dc69b5}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{1f08b014-def3-4d88-8f00-883b272e80d0}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{d666201b-11a3-4701-9d36-02586c65163f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{29d447b6-b08c-4376-bc3c-b3bbb803a282}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mshack_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fc3856eb-bce9-4b97-ac6e-6f610418397c}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{056b0573-fe71-49b2-9eed-10cc9993cf60}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Attendee" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_attendeecontactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_attendeecontactid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fb35da4e-f78d-4736-b9ff-4dc12e34fec0}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Hack Activity" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_hackactivityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_hackactivityid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2f4a6930-3be5-4002-ade5-484d23cb4d37}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Attendance" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_attendance" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="mshack_attendance" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{5cf1e31b-cb71-43e8-ae13-61723cf264dd}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7283c18b-35da-4b29-872c-90f830d36969}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{41dae46f-2d9a-4381-9315-068ba1e59f2c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b42d5f4b-bf3f-4d9e-bcbe-d21d151adc6d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{f25a605b-995a-4088-92fc-9a83138547be}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{37a0226b-272d-41c2-8284-9140c54ecab5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e5c796a8-826a-4ed7-b7a8-fc62efbd9214}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1627af01-882e-472c-aa20-3a4ddcef117e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

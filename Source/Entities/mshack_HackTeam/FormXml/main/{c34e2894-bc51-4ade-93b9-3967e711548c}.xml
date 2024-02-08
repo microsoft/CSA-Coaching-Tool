@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c34e2894-bc51-4ade-93b9-3967e711548c}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{ba0cb062-6a3a-4597-bc6d-4005acca6282}" IsUserDefined="1" name="tab_general">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{6d13bb64-5392-4f7a-a0f7-a901567f81fe}" celllabelposition="Left" columns="11" name="tab_general_section_general">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9bc78b80-44f9-4edd-81b4-2987e353974d}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="mshack_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e180a5db-1f5a-4d68-8baa-bc59779a2efc}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Teams Channel URL" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_teamschannel" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_teamschannel" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{e9bb46a5-7832-4c48-be53-e9796746e499}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd62ae91-050c-4e77-8f25-ece01408abe4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Teams Channel Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_teamschannelname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_teamschannelname" disabled="true" />
+                      </cell>
+                      <cell locklevel="0" id="{56cb57fe-1cbe-4c16-8236-de47c9f74a9a}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="Coach Details" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_2" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>mshack_coach</TargetEntityType>
+                            <ViewId>{F3E5CB76-B771-4CE4-A9E1-DD466641268E}</ViewId>
+                            <ViewIds>{F3E5CB76-B771-4CE4-A9E1-DD466641268E}</ViewIds>
+                            <RelationshipName>mshack_HackTeam_mshack_Coach_mshack_Coach</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{31091cd3-8f4f-407a-b8b7-c206cb54d76a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Coach(es)" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_coachname" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="mshack_coachname" disabled="false" uniqueid="{a4df9404-d15e-4a04-ac1c-70d6c8acc4ef}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e894f65b-1e0d-4594-8916-90b935e17384}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_accountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_accountid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a108efc3-8285-4a5a-a486-3c470ba1eab9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Presentation Timeslot" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_presentationtimeslot" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mshack_presentationtimeslot" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{c7f12033-a722-4d92-a300-a10083dc0bbc}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1699559132436" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1699559132436" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="mshack_accountid">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="account"&gt;dccd6aa0-ca5e-ee11-be6f-000d3a3140c3&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell locklevel="0" id="{e2d6abab-b295-465c-83f9-313a33eda167}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_general_section_contacts" id="821102cd-8032-47a4-82ca-63e29d27554c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="TEAM MEMBERS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{6d30f8ca-b316-4344-ad45-2deeed383fab}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{0c4b1100-68b5-4afd-92ff-692208b72b88}" rowspan="4" colspan="1" auto="true" showlabel="false">
+                        <labels>
+                          <label description="Team Members" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{19c50087-ce9c-423e-b2fa-0e43177523cf}">
+                          <parameters>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>contact</TargetEntityType>
+                            <ViewId>{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</ViewId>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001003},{00000000-0000-0000-00AA-000010001004},{7BD1B94D-D85E-EE11-BE6F-000D3A3140C3},{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</ViewIds>
+                            <RelationshipName>mshack_contact_HackTeamId_mshack_hackteam</RelationshipName>
+                            <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_usecases" id="e62c55b7-819a-41e7-8052-569bc8a2261b" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Use Cases" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_general_section_5" id="760c43a7-0d43-41c3-acdc-8726393b9e6b" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="USE CASE DETAILS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{129b58de-23c6-47c1-a33c-816dd23b3a8b}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1699392768504" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_3" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>mshack_usecase</TargetEntityType>
+                            <ViewId>{99C4E6A4-3FB8-4FC6-9C40-8A729A5F8D40}</ViewId>
+                            <ViewIds>{99C4E6A4-3FB8-4FC6-9C40-8A729A5F8D40}</ViewIds>
+                            <RelationshipName>mshack_usecase_HackTeamId_mshack_hackteam</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{ef4b70b4-2f2b-4989-a446-3baba9233499}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{4deb863d-7f08-4208-892f-f826c7a3900a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5127b49f-4e05-4065-8044-ebc64e82ccd0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5aab46c5-7e02-4e66-ad19-9d2ef73720ed}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{525f810a-3ed8-4fea-8cb9-6312615438c0}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{cde01181-59c6-46bb-8b8d-437f99767564}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{776c2bf3-64b2-49db-82bc-e9a427c2cb05}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c3d05aed-9de4-41eb-9269-eb9071646342}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{88eec63d-dce4-4e3d-b0f9-a4ba7cac7f69}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{a4df9404-d15e-4a04-ac1c-70d6c8acc4ef}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>mshack_coachname</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="dce_DCEPCF.PolyLookup">
+            <parameters>
+              <boundField type="Multiple">mshack_coachname</boundField>
+              <relationshipType type="Enum" static="true">0</relationshipType>
+              <relationship type="SingleLine.Text" static="true">mshack_HackTeam_mshack_Coach_mshack_Coach</relationship>
+              <outputSelected type="Enum" static="true">1</outputSelected>
+              <lookupView type="SingleLine.Text" static="true">Active Coaches</lookupView>
+              <itemLimit type="Whole.None" static="true">10</itemLimit>
+              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="dce_DCEPCF.PolyLookup">
+            <parameters>
+              <boundField type="Multiple">mshack_coachname</boundField>
+              <relationshipType type="Enum" static="true">0</relationshipType>
+              <relationship type="SingleLine.Text" static="true">mshack_HackTeam_mshack_Coach_mshack_Coach</relationship>
+              <outputSelected type="Enum" static="true">1</outputSelected>
+              <lookupView type="SingleLine.Text" static="true">Active Coaches</lookupView>
+              <itemLimit type="Whole.None" static="true">10</itemLimit>
+              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="dce_DCEPCF.PolyLookup">
+            <parameters>
+              <boundField type="Multiple">mshack_coachname</boundField>
+              <relationshipType type="Enum" static="true">0</relationshipType>
+              <relationship type="SingleLine.Text" static="true">mshack_HackTeam_mshack_Coach_mshack_Coach</relationship>
+              <outputSelected type="Enum" static="true">1</outputSelected>
+              <lookupView type="SingleLine.Text" static="true">Active Coaches</lookupView>
+              <itemLimit type="Whole.None" static="true">10</itemLimit>
+              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{19c50087-ce9c-423e-b2fa-0e43177523cf}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters>
+              <RecordsPerPage>4</RecordsPerPage>
+              <AutoExpand>Auto</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <EnableChartPicker>true</EnableChartPicker>
+              <ChartGridMode>All</ChartGridMode>
+              <TargetEntityType>contact</TargetEntityType>
+              <ViewId>{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</ViewId>
+              <ViewIds>{00000000-0000-0000-00AA-000010001003},{00000000-0000-0000-00AA-000010001004},{7BD1B94D-D85E-EE11-BE6F-000D3A3140C3},{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</ViewIds>
+              <RelationshipName>mshack_contact_HackTeamId_mshack_hackteam</RelationshipName>
+              <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</ViewId>
+                <TargetEntityType>contact</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>mshack_contact_HackTeamId_mshack_hackteam</RelationshipName>
+                <FilteredViewIds>{00000000-0000-0000-00AA-000010001003},{00000000-0000-0000-00AA-000010001004},{7BD1B94D-D85E-EE11-BE6F-000D3A3140C3},{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">no</EnableEditing>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">no</EnableGrouping>
+              <EnableMultipleSelection type="Enum" static="true">yes</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">yes</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">no</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">no</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</ViewId>
+                <TargetEntityType>contact</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>mshack_contact_HackTeamId_mshack_hackteam</RelationshipName>
+                <FilteredViewIds>{00000000-0000-0000-00AA-000010001003},{00000000-0000-0000-00AA-000010001004},{7BD1B94D-D85E-EE11-BE6F-000D3A3140C3},{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">no</EnableEditing>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">no</EnableGrouping>
+              <EnableMultipleSelection type="Enum" static="true">yes</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">yes</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">no</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">no</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</ViewId>
+                <TargetEntityType>contact</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>mshack_contact_HackTeamId_mshack_hackteam</RelationshipName>
+                <FilteredViewIds>{00000000-0000-0000-00AA-000010001003},{00000000-0000-0000-00AA-000010001004},{7BD1B94D-D85E-EE11-BE6F-000D3A3140C3},{76AD5BCC-E67F-EE11-8179-000D3A1BA0D6}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">no</EnableEditing>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">no</EnableGrouping>
+              <EnableMultipleSelection type="Enum" static="true">yes</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">yes</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">no</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">no</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

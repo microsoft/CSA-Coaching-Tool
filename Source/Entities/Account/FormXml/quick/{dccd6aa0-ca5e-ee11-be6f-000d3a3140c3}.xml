@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{dccd6aa0-ca5e-ee11-be6f-000d3a3140c3}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{2023fe91-020b-4bb7-8569-a08dadf93b1d}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{3f21f5fe-ec56-4b9b-8e0c-b45c0788fb88}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{7a0a163d-5f72-4754-b111-31bb5cef9914}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4c90e4a1-c634-4218-a744-8631c5ec962c}" locklevel="0" colspan="1" rowspan="1" labelid="{ac294536-efb5-4c4a-a8bd-110f3636ec49}">
+                        <labels>
+                          <label description="Account Name" languagecode="1033" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{276d00ec-6233-4a03-958a-3aceb87340e6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Territory" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_ou" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_ou" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2cd9e661-a031-4a2e-bf09-2a1275ff38ba}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="TPID" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_tpid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_tpid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{93f79a7e-e67b-4c65-ac2a-323fafcc6642}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="MSX URL" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_msxurl" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_msxurl" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Hack Account" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A quick view form of Accounts for use on Hack Participation forms" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

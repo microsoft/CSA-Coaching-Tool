@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{99c4e6a4-3fb8-4fc6-9c40-8a729a5f8d40}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
+        <row name="result" id="mshack_usecaseid">
+          <cell name="mshack_name" width="165" />
+          <cell name="mshack_description" width="242" />
+          <cell name="mshack_hackteamid" width="104" />
+          <cell name="mshack_opportunityname" width="146" />
+          <cell name="mshack_opportunityid" width="127" />
+          <cell name="mshack_opportunityurl" width="140" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="mshack_usecase">
+          <attribute name="mshack_usecaseid" />
+          <attribute name="mshack_name" />
+          <attribute name="createdon" />
+          <order attribute="mshack_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="mshack_description" />
+          <attribute name="mshack_hackteamid" />
+          <attribute name="mshack_opportunityname" />
+          <attribute name="mshack_opportunityid" />
+          <attribute name="mshack_opportunityurl" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Use Cases" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

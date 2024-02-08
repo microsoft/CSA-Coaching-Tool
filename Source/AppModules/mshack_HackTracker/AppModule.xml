@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>mshack_HackTracker</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="1" schemaName="mshack_activityattendance" />
+    <AppModuleComponent type="1" schemaName="mshack_coach" />
+    <AppModuleComponent type="1" schemaName="mshack_hackactivities" />
+    <AppModuleComponent type="1" schemaName="mshack_hackteam" />
+    <AppModuleComponent type="1" schemaName="mshack_usecase" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000000666000}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000000666400}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001031}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001200}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001210}" />
+    <AppModuleComponent type="26" id="{80eb7357-e77d-ee11-8179-000d3a190bdf}" />
+    <AppModuleComponent type="26" id="{e11787b3-e77d-ee11-8179-000d3a190bdf}" />
+    <AppModuleComponent type="26" id="{6f95e2b3-1f8f-ee11-8179-000d3a1c017f}" />
+    <AppModuleComponent type="26" id="{5a72f3dc-1f8f-ee11-8179-000d3a1c017f}" />
+    <AppModuleComponent type="26" id="{7bd1b94d-d85e-ee11-be6f-000d3a3140c3}" />
+    <AppModuleComponent type="26" id="{e88a59cf-da5e-ee11-be6f-000d3a3140c3}" />
+    <AppModuleComponent type="26" id="{2d1187c4-23fe-4bb5-9647-43bb1c6ddbd1}" />
+    <AppModuleComponent type="26" id="{a2d479c5-53e3-4c69-addd-802327e67a0d}" />
+    <AppModuleComponent type="26" id="{a9af0ab8-861d-4cfa-92a5-c6281fed7fab}" />
+    <AppModuleComponent type="26" id="{8df19b44-a073-40c3-9d6d-ee1355d8c4ba}" />
+    <AppModuleComponent type="60" id="{df30b480-c95e-ee11-be6f-000d3a3140c3}" />
+    <AppModuleComponent type="60" id="{dccd6aa0-ca5e-ee11-be6f-000d3a3140c3}" />
+    <AppModuleComponent type="60" id="{83c78fb7-db5e-ee11-be6f-000d3a314c24}" />
+    <AppModuleComponent type="62" schemaName="mshack_HackTracker" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{27b51010-e85e-ee11-be6f-000d3a314c24}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Hack Tracker" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Hack Tracker enables business users to quickly track and manage hack event participation and associated contacts." languagecode="1033" />
+  </Descriptions>
+  <appelements>
+    <appelement uniquename="mshack_mshack_HackTracker_canvasappid_mshack_accountlookup_256cb">
+      <canvasappid>
+        <name>mshack_accountlookup_256cb</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>mshack_mshack_HackTracker_canvasappid_mshack_accountlookup_256cb</name>
+    </appelement>
+    <appelement uniquename="mshack_mshack_HackTracker_canvasappid_mshack_attachaccounts_3bd71">
+      <canvasappid>
+        <name>mshack_attachaccounts_3bd71</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>mshack_mshack_HackTracker_canvasappid_mshack_attachaccounts_3bd71</name>
+    </appelement>
+    <appelement uniquename="mshack_mshack_HackTracker_canvasappid_mshack_createteams_3325a">
+      <canvasappid>
+        <name>mshack_createteams_3325a</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>mshack_mshack_HackTracker_canvasappid_mshack_createteams_3325a</name>
+    </appelement>
+    <appelement uniquename="mshack_mshack_HackTracker_canvasappid_mshack_hacktrackerdefaultcommandlibrary_1bde3">
+      <canvasappid>
+        <name>mshack_hacktrackerdefaultcommandlibrary_1bde3</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>mshack_mshack_HackTracker_canvasappid_mshack_hacktrackerdefaultcommandlibrary_1bde3</name>
+    </appelement>
+    <appelement uniquename="mshack_mshack_HackTracker_canvasappid_mshack_opportunitylookup_f5faf">
+      <canvasappid>
+        <name>mshack_opportunitylookup_f5faf</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>mshack_mshack_HackTracker_canvasappid_mshack_opportunitylookup_f5faf</name>
+    </appelement>
+  </appelements>
+</AppModule>

@@ -1,0 +1,37 @@
+<appaction uniquename="mshack__ConnectAccount!e72bebeed33047c89552537528b73529!mshack_HackTracker!contact!0">
+  <appmoduleid>
+    <uniquename>mshack_HackTracker</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Connect Account">
+    <label description="Connect Account" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>contact</logicalname>
+  </contextentity>
+  <contextvalue>contact</contextvalue>
+  <fonticon>KBRecords</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>ConnectAccount!e72bebeed33047c89552537528b73529</name>
+  <onclickeventjavascriptfunctionname>openAccountCustomPage</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>9fd44d5e-287d-ee11-8179-6045bdeeb820</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100037.5000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibraryid>
+    <name>mshack_hacktrackerdefaultcommandlibrary_1bde3</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>4c2bc938928648ffac99469e4cbc67aa</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>

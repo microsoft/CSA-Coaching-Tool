@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{27b51010-e85e-ee11-be6f-000d3a314c24}" name="Hack Admins" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendAccount" level="Global" />
+    <RolePrivilege name="prvAppendContact" level="Global" />
+    <RolePrivilege name="prvAppendmshack_ActivityAttendance" level="Global" />
+    <RolePrivilege name="prvAppendmshack_Coach" level="Global" />
+    <RolePrivilege name="prvAppendmshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvAppendmshack_HackTeam" level="Global" />
+    <RolePrivilege name="prvAppendmshack_UseCase" level="Global" />
+    <RolePrivilege name="prvAppendToAccount" level="Global" />
+    <RolePrivilege name="prvAppendToContact" level="Global" />
+    <RolePrivilege name="prvAppendTomshack_ActivityAttendance" level="Global" />
+    <RolePrivilege name="prvAppendTomshack_Coach" level="Global" />
+    <RolePrivilege name="prvAppendTomshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvAppendTomshack_HackTeam" level="Global" />
+    <RolePrivilege name="prvAppendTomshack_UseCase" level="Global" />
+    <RolePrivilege name="prvCreateAccount" level="Global" />
+    <RolePrivilege name="prvCreateContact" level="Global" />
+    <RolePrivilege name="prvCreatemshack_ActivityAttendance" level="Global" />
+    <RolePrivilege name="prvCreatemshack_Coach" level="Global" />
+    <RolePrivilege name="prvCreatemshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvCreatemshack_HackTeam" level="Global" />
+    <RolePrivilege name="prvCreatemshack_UseCase" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeletemshack_ActivityAttendance" level="Global" />
+    <RolePrivilege name="prvDeletemshack_Coach" level="Global" />
+    <RolePrivilege name="prvDeletemshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvDeletemshack_HackTeam" level="Global" />
+    <RolePrivilege name="prvDeletemshack_UseCase" level="Global" />
+    <RolePrivilege name="prvReadaaduser" level="Global" />
+    <RolePrivilege name="prvReadAccount" level="Global" />
+    <RolePrivilege name="prvReadContact" level="Global" />
+    <RolePrivilege name="prvReadmshack_ActivityAttendance" level="Global" />
+    <RolePrivilege name="prvReadmshack_Coach" level="Global" />
+    <RolePrivilege name="prvReadmshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvReadmshack_HackTeam" level="Global" />
+    <RolePrivilege name="prvReadmshack_UseCase" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvWriteAccount" level="Global" />
+    <RolePrivilege name="prvWriteContact" level="Global" />
+    <RolePrivilege name="prvWritemshack_ActivityAttendance" level="Global" />
+    <RolePrivilege name="prvWritemshack_Coach" level="Global" />
+    <RolePrivilege name="prvWritemshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvWritemshack_HackTeam" level="Global" />
+    <RolePrivilege name="prvWritemshack_UseCase" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>
