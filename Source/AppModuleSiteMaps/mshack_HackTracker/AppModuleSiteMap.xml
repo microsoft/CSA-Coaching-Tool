@@ -44,6 +44,7 @@
         </Titles>
         <SubArea Id="subarea_6af7de1b" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="mshack_coach" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
         <SubArea Id="subarea_124249a1" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="account" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_4065e050" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="mshack_hackevent" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
         <SubArea Id="subarea_8c7ba312" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="mshack_hackactivities" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
       </Group>
     </Area>

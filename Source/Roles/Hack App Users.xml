@@ -7,6 +7,7 @@
     <RolePrivilege name="prvAppendmshack_ActivityAttendance" level="Global" />
     <RolePrivilege name="prvAppendmshack_Coach" level="Global" />
     <RolePrivilege name="prvAppendmshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvAppendmshack_HackEvent" level="Global" />
     <RolePrivilege name="prvAppendmshack_HackTeam" level="Global" />
     <RolePrivilege name="prvAppendmshack_UseCase" level="Global" />
     <RolePrivilege name="prvAppendToAccount" level="Global" />
@@ -14,13 +15,11 @@
     <RolePrivilege name="prvAppendTomshack_ActivityAttendance" level="Global" />
     <RolePrivilege name="prvAppendTomshack_Coach" level="Global" />
     <RolePrivilege name="prvAppendTomshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvAppendTomshack_HackEvent" level="Global" />
     <RolePrivilege name="prvAppendTomshack_HackTeam" level="Global" />
     <RolePrivilege name="prvAppendTomshack_UseCase" level="Global" />
     <RolePrivilege name="prvCreateAccount" level="Global" />
     <RolePrivilege name="prvCreateContact" level="Global" />
-    <RolePrivilege name="prvCreatemshack_ActivityAttendance" level="Global" />
-    <RolePrivilege name="prvCreatemshack_Coach" level="Global" />
-    <RolePrivilege name="prvCreatemshack_HackActivities" level="Global" />
     <RolePrivilege name="prvCreatemshack_HackTeam" level="Global" />
     <RolePrivilege name="prvCreatemshack_UseCase" level="Global" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
@@ -30,6 +29,7 @@
     <RolePrivilege name="prvReadmshack_ActivityAttendance" level="Global" />
     <RolePrivilege name="prvReadmshack_Coach" level="Global" />
     <RolePrivilege name="prvReadmshack_HackActivities" level="Global" />
+    <RolePrivilege name="prvReadmshack_HackEvent" level="Global" />
     <RolePrivilege name="prvReadmshack_HackTeam" level="Global" />
     <RolePrivilege name="prvReadmshack_UseCase" level="Global" />
     <RolePrivilege name="prvReadPluginAssembly" level="Global" />
@@ -42,8 +42,6 @@
     <RolePrivilege name="prvWriteAccount" level="Global" />
     <RolePrivilege name="prvWriteContact" level="Global" />
     <RolePrivilege name="prvWritemshack_ActivityAttendance" level="Global" />
-    <RolePrivilege name="prvWritemshack_Coach" level="Global" />
-    <RolePrivilege name="prvWritemshack_HackActivities" level="Global" />
     <RolePrivilege name="prvWritemshack_HackTeam" level="Global" />
     <RolePrivilege name="prvWritemshack_UseCase" level="Global" />
     <RolePrivilege name="prvWriteSharePointData" level="Global" />

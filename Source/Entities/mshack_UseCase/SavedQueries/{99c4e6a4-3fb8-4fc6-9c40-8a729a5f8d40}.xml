@@ -11,8 +11,8 @@
       <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
         <row name="result" id="mshack_usecaseid">
           <cell name="mshack_name" width="165" />
-          <cell name="mshack_description" width="242" />
-          <cell name="mshack_hackteamid" width="104" />
+          <cell name="mshack_description" width="300" />
+          <cell name="mshack_hackteamid" width="186" />
           <cell name="mshack_opportunityname" width="146" />
           <cell name="mshack_opportunityid" width="127" />
           <cell name="mshack_opportunityurl" width="140" />
@@ -22,26 +22,40 @@
     </layoutxml>
     <querytype>0</querytype>
     <fetchxml>
-      <fetch version="1.0" mapping="logical">
+      <fetch version="1.0" mapping="logical" distinct="true">
         <entity name="mshack_usecase">
           <attribute name="mshack_usecaseid" />
           <attribute name="mshack_name" />
           <attribute name="createdon" />
-          <order attribute="mshack_name" descending="false" />
-          <filter type="and">
-            <condition attribute="statecode" operator="eq" value="0" />
-          </filter>
           <attribute name="mshack_description" />
           <attribute name="mshack_hackteamid" />
           <attribute name="mshack_opportunityname" />
           <attribute name="mshack_opportunityid" />
           <attribute name="mshack_opportunityurl" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="mshack_hackteam" alias="aa" link-type="inner" from="mshack_hackteamid" to="mshack_hackteamid">
+            <link-entity name="mshack_hackteam_mshack_coach" intersect="true" visible="false" from="mshack_hackteamid" to="mshack_hackteamid">
+              <link-entity name="mshack_coach" alias="ac" from="mshack_coachid" to="mshack_coachid">
+                <filter type="and">
+                  <condition attribute="mshack_systemuserid" operator="eq-userid" />
+                </filter>
+              </link-entity>
+            </link-entity>
+            <link-entity name="mshack_hackevent" alias="ad" link-type="inner" from="mshack_hackeventid" to="mshack_hackevent">
+              <filter type="and">
+                <condition attribute="mshack_iscurrent" operator="eq" value="1" />
+              </filter>
+            </link-entity>
+          </link-entity>
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Active Use Cases" languagecode="1033" />
+      <LocalizedName description="My Use Cases (Current Event)" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

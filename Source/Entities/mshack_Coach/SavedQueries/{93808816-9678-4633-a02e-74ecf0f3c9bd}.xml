@@ -12,27 +12,38 @@
         <row name="mshack_coach" id="mshack_coachid">
           <cell name="mshack_name" width="113" />
           <cell name="mshack_preferredcustomers" width="165" />
-          <cell name="mshack_timezoneevent" width="132" />
           <cell name="mshack_ou" width="100" />
+          <cell name="mshack_timezoneevent" width="132" />
           <cell name="emailaddress" width="123" />
+          <cell name="mshack_systemuserid" width="112" />
+          <cell name="mshack_hackeventid" width="106" />
           <cell name="mshack_registrationdate" width="139" />
+          <cell name="mshack_registrationid" width="127" />
         </row>
       </grid>
     </layoutxml>
     <querytype>64</querytype>
     <fetchxml>
-      <fetch version="1.0" mapping="logical">
+      <fetch version="1.0" mapping="logical" distinct="true">
         <entity name="mshack_coach">
           <attribute name="mshack_coachid" />
           <attribute name="mshack_name" />
-          <filter type="and">
-            <condition attribute="statecode" operator="eq" value="0" />
-          </filter>
           <attribute name="mshack_preferredcustomers" />
           <attribute name="mshack_timezoneevent" />
           <attribute name="emailaddress" />
           <attribute name="mshack_ou" />
           <attribute name="mshack_registrationdate" />
+          <attribute name="mshack_hackeventid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="mshack_hackevent" alias="ac" link-type="inner" from="mshack_hackeventid" to="mshack_hackeventid">
+            <filter type="and">
+              <condition attribute="mshack_iscurrent" operator="eq" value="1" />
+            </filter>
+          </link-entity>
+          <attribute name="mshack_registrationid" />
+          <attribute name="mshack_systemuserid" />
         </entity>
       </fetch>
     </fetchxml>

@@ -15,14 +15,14 @@ pac auth select --index 3
 # EXPORT SOLUTIONS
 # Set these before running the script
 
-$solutionDir = ".\Solutions\"
-$solutionVersion = "1.0.0.0"
-$newSolutionVersion = "1.0.0.1"
-$solutionName = "HackTrackerSecurityRoles"
+# $solutionDir = ".\Solutions\"
+# $solutionVersion = "1.0.0.0"
+# $newSolutionVersion = "1.0.0.1"
+# $solutionName = "HackTrackerSecurityRoles"
 
-# $solutionVersion = "1.0.0.21"
-# $newSolutionVersion = "1.0.0.22"
-# $solutionName = "HackTracker"
+$solutionVersion = "1.0.0.23"
+$newSolutionVersion = "1.0.0.24"
+$solutionName = "HackTracker"
 
 # The following commands execute the export using the variables above
 
@@ -36,12 +36,12 @@ pac solution create-settings -z ${solutionDir}${solutionName}-${solutionVersion}
 # IMPORT MANAGED SOLUTION
 # Set these before running the script
 
-$solutionDir = ".\Solutions\"
-$solutionVersion = "1.0.0.0"
-$solutionName = "HackTrackerSecurityRoles"
+# $solutionDir = ".\Solutions\"
+# $solutionVersion = "1.0.0.0"
+# $solutionName = "HackTrackerSecurityRoles"
 
-# $solutionVersion = "1.0.0.21"
-# $solutionName = "HackTracker"
+$solutionVersion = "1.0.0.23"
+$solutionName = "HackTracker"
 
 # $settingsName = "EnvSettings.json"
 
@@ -54,11 +54,11 @@ pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_mana
 # UNPACK SOLUTIONS
 # Set these before running script
 
-$solutionDir = ".\Solutions\"
-$solutionVersion = "1.0.0.0"
-$solutionName = "HackTrackerSecurityRoles"
-# $solutionVersion = "1.0.0.21"
-# $solutionName = "HackTracker"
+# $solutionDir = ".\Solutions\"
+# $solutionVersion = "1.0.0.0"
+# $solutionName = "HackTrackerSecurityRoles"
+$solutionVersion = "1.0.0.23"
+$solutionName = "HackTracker"
 $targetFolder = ".\Source\"
 
 pac solution unpack --zipfile ${solutionDir}${solutionName}-${solutionVersion}.zip --folder ${targetFolder}

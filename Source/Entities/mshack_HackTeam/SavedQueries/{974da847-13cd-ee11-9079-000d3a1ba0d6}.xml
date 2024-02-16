@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{974da847-13cd-ee11-9079-000d3a1ba0d6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
+        <row name="result" id="mshack_hackteamid">
+          <cell name="mshack_name" width="198" />
+          <cell name="mshack_hackevent" width="217" />
+          <cell name="mshack_accountid" width="214" />
+          <cell name="mshack_coachname" width="149" />
+          <cell name="mshack_teamschannelname" width="164" />
+          <cell name="mshack_teamschannel" width="300" />
+          <cell name="mshack_registrationdate" width="139" />
+          <cell name="mshack_registrationid" width="127" />
+          <cell name="modifiedon" width="113" />
+          <cell name="modifiedby" width="112" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="mshack_hackteam">
+          <attribute name="mshack_name" />
+          <attribute name="mshack_coachname" />
+          <attribute name="mshack_teamschannel" />
+          <attribute name="mshack_hackteamid" />
+          <attribute name="modifiedon" />
+          <attribute name="modifiedby" />
+          <attribute name="mshack_hackevent" />
+          <attribute name="mshack_teamschannelname" />
+          <attribute name="mshack_registrationid" />
+          <order attribute="mshack_hackevent" descending="false" />
+          <order attribute="mshack_name" descending="false" />
+          <attribute name="mshack_registrationdate" />
+          <attribute name="mshack_accountid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="mshack_hackevent" alias="ae" link-type="inner" from="mshack_hackeventid" to="mshack_hackevent">
+            <filter type="and">
+              <condition attribute="mshack_iscurrent" operator="eq" value="1" />
+            </filter>
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.23</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Current Event Hack Teams" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

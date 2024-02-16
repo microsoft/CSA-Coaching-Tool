@@ -11,10 +11,13 @@
       <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
         <row name="result" id="mshack_hackteamid">
           <cell name="mshack_name" width="200" />
-          <cell name="mshack_teamschannel" width="300" />
+          <cell name="mshack_hackevent" width="232" />
+          <cell name="mshack_accountid" width="183" />
+          <cell name="mshack_registrationid" width="127" />
           <cell name="createdon" width="143" />
           <cell name="modifiedon" width="113" />
           <cell name="modifiedby" width="112" />
+          <cell name="mshack_registrationdate" width="139" />
         </row>
       </grid>
     </layoutxml>
@@ -26,11 +29,15 @@
           <filter type="and">
             <condition attribute="mshack_coachname" operator="null" />
           </filter>
-          <attribute name="mshack_teamschannel" />
           <attribute name="mshack_hackteamid" />
           <attribute name="createdon" />
           <attribute name="modifiedon" />
           <attribute name="modifiedby" />
+          <attribute name="mshack_accountid" />
+          <attribute name="mshack_registrationid" />
+          <order attribute="mshack_name" descending="false" />
+          <attribute name="mshack_hackevent" />
+          <attribute name="mshack_registrationdate" />
         </entity>
       </fetch>
     </fetchxml>

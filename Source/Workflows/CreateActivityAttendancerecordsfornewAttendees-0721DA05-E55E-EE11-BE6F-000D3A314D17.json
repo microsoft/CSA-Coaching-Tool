@@ -46,7 +46,7 @@
         }
       },
       "actions": {
-        "List_Hack_Activities": {
+        "List_Participant_Hack_Activities": {
           "runAfter": {},
           "metadata": {
             "operationMetadataId": "b3caae90-181d-4c9a-a6c7-bc62a460e65d"
@@ -59,13 +59,15 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
             },
             "parameters": {
-              "entityName": "mshack_hackactivitieses"
+              "entityName": "mshack_hackactivitieses",
+              "$filter": "mshack_type eq 808570000 and statuscode eq 1"
             },
             "authentication": "@parameters('$authentication')"
-          }
+          },
+          "description": "Type = Participant and Status Code = Active (not draft)"
         },
         "Apply_to_each": {
-          "foreach": "@outputs('List_Hack_Activities')?['body/value']",
+          "foreach": "@outputs('List_Participant_Hack_Activities')?['body/value']",
           "actions": {
             "Create_Activity_Attendance_records": {
               "runAfter": {},
@@ -90,7 +92,7 @@
             }
           },
           "runAfter": {
-            "List_Hack_Activities": [
+            "List_Participant_Hack_Activities": [
               "Succeeded"
             ]
           },

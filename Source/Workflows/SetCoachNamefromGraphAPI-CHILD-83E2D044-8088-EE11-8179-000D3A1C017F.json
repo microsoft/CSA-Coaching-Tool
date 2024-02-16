@@ -11,7 +11,6 @@
         }
       },
       "shared_commondataserviceforapps_1": {
-        "impersonation": {},
         "runtimeSource": "embedded",
         "connection": {
           "connectionReferenceLogicalName": "mshack_sharedcommondataserviceforapps_11fd8"
@@ -77,40 +76,72 @@
           "type": "OpenApiConnection",
           "inputs": {
             "host": {
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365users",
               "connectionName": "shared_office365users_1",
-              "operationId": "UserProfile_V2"
+              "operationId": "UserProfile_V2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365users"
             },
             "parameters": {
               "id": "@triggerBody()['text_1']"
             },
-            "authentication": {
-              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']",
-              "type": "Raw"
-            }
+            "authentication": "@parameters('$authentication')"
           }
         },
         "Condition": {
           "actions": {
-            "Update_Coach_record": {
+            "Get_System_User": {
               "runAfter": {},
               "metadata": {
-                "operationMetadataId": "ac6abf90-a4c4-4fa3-b159-a32b7574b957"
+                "operationMetadataId": "44ab013c-7651-43ff-9f82-717544c2b97f"
               },
               "type": "OpenApiConnection",
               "inputs": {
                 "host": {
-                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
                   "connectionName": "shared_commondataserviceforapps_1",
-                  "operationId": "UpdateRecord"
+                  "operationId": "ListRecords",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
                 },
                 "parameters": {
-                  "entityName": "mshack_coachs",
-                  "recordId": "@triggerBody()['text']",
-                  "item/mshack_name": "@outputs('Get_user_profile_(V2)')?['body/displayName']"
+                  "entityName": "systemusers",
+                  "$filter": "domainname eq '@{outputs('Get_user_profile_(V2)')?['body/userPrincipalName']}'",
+                  "$top": 1
                 },
                 "authentication": "@parameters('$authentication')"
               }
+            },
+            "Apply_to_each": {
+              "foreach": "@outputs('Get_System_User')?['body/value']",
+              "actions": {
+                "Update_Coach_record": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "ac6abf90-a4c4-4fa3-b159-a32b7574b957"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_commondataserviceforapps_1",
+                      "operationId": "UpdateRecord",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                    },
+                    "parameters": {
+                      "entityName": "mshack_coachs",
+                      "recordId": "@triggerBody()['text']",
+                      "item/mshack_name": "@outputs('Get_user_profile_(V2)')?['body/displayName']",
+                      "item/mshack_SystemUserId@odata.bind": "systemusers/@{items('Apply_to_each')?['systemuserid']}"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                }
+              },
+              "runAfter": {
+                "Get_System_User": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "fa577fa5-65fd-4843-aae0-cccbaa2e6f5c"
+              },
+              "type": "Foreach"
             }
           },
           "runAfter": {
@@ -165,7 +196,7 @@
         }
       }
     },
-    "templateName": null
+    "templateName": ""
   },
   "schemaVersion": "1.0.0.0"
 }

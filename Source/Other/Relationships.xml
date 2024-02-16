@@ -3,6 +3,7 @@
   <EntityRelationship Name="business_unit_mshack_activityattendance" />
   <EntityRelationship Name="business_unit_mshack_coach" />
   <EntityRelationship Name="business_unit_mshack_hackactivities" />
+  <EntityRelationship Name="business_unit_mshack_hackevent" />
   <EntityRelationship Name="business_unit_mshack_hackteam" />
   <EntityRelationship Name="business_unit_mshack_usecase" />
   <EntityRelationship Name="lk_mshack_activityattendance_createdby" />
@@ -11,13 +12,19 @@
   <EntityRelationship Name="lk_mshack_coach_modifiedby" />
   <EntityRelationship Name="lk_mshack_hackactivities_createdby" />
   <EntityRelationship Name="lk_mshack_hackactivities_modifiedby" />
+  <EntityRelationship Name="lk_mshack_hackevent_createdby" />
+  <EntityRelationship Name="lk_mshack_hackevent_modifiedby" />
   <EntityRelationship Name="lk_mshack_hackteam_createdby" />
   <EntityRelationship Name="lk_mshack_hackteam_modifiedby" />
   <EntityRelationship Name="lk_mshack_usecase_createdby" />
   <EntityRelationship Name="lk_mshack_usecase_modifiedby" />
+  <EntityRelationship Name="mshack_coach_HackEventId_mshack_hackevent" />
+  <EntityRelationship Name="mshack_coach_SystemUserId_systemuser" />
   <EntityRelationship Name="mshack_contact_HackTeamId_mshack_hackteam" />
   <EntityRelationship Name="mshack_contact_ParentCompanyId_account" />
+  <EntityRelationship Name="mshack_hackactivities_HackEventId_mshack_hackeve" />
   <EntityRelationship Name="mshack_hackteam_AccountId_account" />
+  <EntityRelationship Name="mshack_hackteam_HackEvent_mshack_hackevent" />
   <EntityRelationship Name="mshack_HackTeam_mshack_Coach_mshack_Coach" />
   <EntityRelationship Name="mshack_mshack_activityattendance_AttendeeContact" />
   <EntityRelationship Name="mshack_mshack_activityattendance_HackActivityId_" />
@@ -26,16 +33,19 @@
   <EntityRelationship Name="owner_mshack_activityattendance" />
   <EntityRelationship Name="owner_mshack_coach" />
   <EntityRelationship Name="owner_mshack_hackactivities" />
+  <EntityRelationship Name="owner_mshack_hackevent" />
   <EntityRelationship Name="owner_mshack_hackteam" />
   <EntityRelationship Name="owner_mshack_usecase" />
   <EntityRelationship Name="team_mshack_activityattendance" />
   <EntityRelationship Name="team_mshack_coach" />
   <EntityRelationship Name="team_mshack_hackactivities" />
+  <EntityRelationship Name="team_mshack_hackevent" />
   <EntityRelationship Name="team_mshack_hackteam" />
   <EntityRelationship Name="team_mshack_usecase" />
   <EntityRelationship Name="user_mshack_activityattendance" />
   <EntityRelationship Name="user_mshack_coach" />
   <EntityRelationship Name="user_mshack_hackactivities" />
+  <EntityRelationship Name="user_mshack_hackevent" />
   <EntityRelationship Name="user_mshack_hackteam" />
   <EntityRelationship Name="user_mshack_usecase" />
 </EntityRelationships>

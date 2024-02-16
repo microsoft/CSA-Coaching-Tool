@@ -11,11 +11,14 @@
       <grid name="mshack_coachs" jump="mshack_name" select="1" icon="1" preview="1">
         <row name="mshack_coach" id="mshack_coachid">
           <cell name="mshack_name" width="114" />
+          <cell name="mshack_ou" width="100" />
           <cell name="mshack_timezoneevent" width="132" />
           <cell name="mshack_preferredcustomers" width="165" />
-          <cell name="mshack_ou" width="100" />
+          <cell name="mshack_hackeventid" width="167" />
           <cell name="emailaddress" width="123" />
           <cell name="mshack_registrationdate" width="139" />
+          <cell name="mshack_registrationid" width="127" />
+          <cell name="mshack_systemuserid" width="112" />
         </row>
       </grid>
     </layoutxml>
@@ -34,6 +37,9 @@
           <attribute name="emailaddress" />
           <attribute name="mshack_ou" />
           <attribute name="mshack_registrationdate" />
+          <attribute name="mshack_hackeventid" />
+          <attribute name="mshack_systemuserid" />
+          <attribute name="mshack_registrationid" />
         </entity>
       </fetch>
     </fetchxml>

@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{78e40f61-4e50-4ec2-a4ac-198f8bbcc8fc}" IsUserDefined="1">
           <labels>
@@ -28,11 +28,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b9d1c14f-3fde-417a-a328-67ff25eec0e9}">
+                      <cell id="{5ee5b81b-9fa8-4044-94a5-1c3f68002335}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="Owner" languagecode="1033" />
+                          <label description="Hack Event" languagecode="1033" />
                         </labels>
-                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                        <control id="mshack_hackeventid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_hackeventid" disabled="false" />
                       </cell>
                     </row>
                   </rows>
@@ -42,6 +42,57 @@
           </columns>
         </tab>
       </tabs>
+      <header id="{4b54e7cb-a47e-4019-8fda-a914cd35dd84}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{0212c110-4f15-4eda-9160-d4dcce705c2c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7427c0c7-adb7-44e8-998f-8fb6ff01d0e5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6f191290-a84b-43f7-8669-b15c35d02d7f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b9d1c14f-3fde-417a-a328-67ff25eec0e9}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{90a26245-b136-421f-a5e0-3b2772ad36b4}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{54e5659a-9604-4753-8e4d-ec76236e1306}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{47557ba3-9329-450a-93ab-a826a5d92960}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{69ec2152-c9df-4ad8-be3a-a90df179105e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

@@ -64,6 +64,14 @@
                   <rows>
                     <row />
                     <row>
+                      <cell id="{b8b4b643-dd85-499e-8325-87e87ca8939a}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Hack Event" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_hackeventid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_hackeventid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{1c7b4c4b-c598-4377-b9a2-0022f37b74ce}" locklevel="0" rowspan="1" colspan="1">
                         <labels>
                           <label description="Timezone Event" languagecode="1033" />

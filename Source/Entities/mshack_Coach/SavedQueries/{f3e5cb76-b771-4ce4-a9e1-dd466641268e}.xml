@@ -5,18 +5,20 @@
     <CanBeDeleted>0</CanBeDeleted>
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
-    <isdefault>1</isdefault>
+    <isdefault>0</isdefault>
     <savedqueryid>{f3e5cb76-b771-4ce4-a9e1-dd466641268e}</savedqueryid>
     <layoutxml>
       <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
         <row name="result" id="mshack_coachid">
           <cell name="mshack_name" width="106" />
+          <cell name="mshack_hackeventid" width="135" />
           <cell name="mshack_timezoneevent" width="132" />
           <cell name="mshack_preferredcustomers" width="168" />
           <cell name="emailaddress" width="123" />
           <cell name="mshack_ou" width="126" />
           <cell name="mshack_registrationdate" width="139" />
           <cell name="mshack_registrationid" width="127" />
+          <cell name="mshack_systemuserid" width="112" />
         </row>
       </grid>
     </layoutxml>
@@ -26,7 +28,6 @@
         <entity name="mshack_coach">
           <attribute name="mshack_coachid" />
           <attribute name="mshack_name" />
-          <order attribute="mshack_name" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
@@ -36,12 +37,16 @@
           <attribute name="mshack_registrationdate" />
           <attribute name="emailaddress" />
           <attribute name="mshack_registrationid" />
+          <attribute name="mshack_hackeventid" />
+          <order attribute="mshack_hackeventid" descending="false" />
+          <order attribute="mshack_name" descending="false" />
+          <attribute name="mshack_systemuserid" />
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Active Coaches" languagecode="1033" />
+      <LocalizedName description="All Coaches" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

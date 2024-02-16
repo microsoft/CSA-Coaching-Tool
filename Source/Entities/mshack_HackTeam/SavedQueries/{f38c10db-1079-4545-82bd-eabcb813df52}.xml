@@ -11,8 +11,13 @@
       <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
         <row name="result" id="mshack_hackteamid">
           <cell name="mshack_name" width="198" />
-          <cell name="mshack_coachname" width="127" />
+          <cell name="mshack_hackevent" width="217" />
+          <cell name="mshack_accountid" width="214" />
+          <cell name="mshack_coachname" width="149" />
+          <cell name="mshack_teamschannelname" width="164" />
           <cell name="mshack_teamschannel" width="300" />
+          <cell name="mshack_registrationdate" width="139" />
+          <cell name="mshack_registrationid" width="127" />
           <cell name="modifiedon" width="113" />
           <cell name="modifiedby" width="112" />
         </row>
@@ -23,7 +28,6 @@
       <fetch version="1.0" mapping="logical">
         <entity name="mshack_hackteam">
           <attribute name="mshack_name" />
-          <order attribute="mshack_name" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
@@ -32,12 +36,19 @@
           <attribute name="mshack_hackteamid" />
           <attribute name="modifiedon" />
           <attribute name="modifiedby" />
+          <attribute name="mshack_hackevent" />
+          <attribute name="mshack_teamschannelname" />
+          <attribute name="mshack_registrationid" />
+          <order attribute="mshack_hackevent" descending="false" />
+          <order attribute="mshack_name" descending="false" />
+          <attribute name="mshack_registrationdate" />
+          <attribute name="mshack_accountid" />
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Active Hack Teams" languagecode="1033" />
+      <LocalizedName description="All Hack Teams" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

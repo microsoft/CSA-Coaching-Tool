@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f01f385f-12cd-ee11-9079-000d3a1c017f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
+        <row name="result" id="mshack_coachid">
+          <cell name="mshack_name" width="176" />
+          <cell name="mshack_preferredcustomers" width="168" />
+          <cell name="mshack_timezoneevent" width="132" />
+          <cell name="emailaddress" width="123" />
+          <cell name="mshack_ou" width="126" />
+          <cell name="mshack_hackeventid" width="135" />
+          <cell name="mshack_registrationdate" width="139" />
+          <cell name="mshack_registrationid" width="127" />
+          <cell name="mshack_systemuserid" width="112" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="mshack_coach">
+          <attribute name="mshack_coachid" />
+          <attribute name="mshack_name" />
+          <attribute name="mshack_timezoneevent" />
+          <attribute name="mshack_preferredcustomers" />
+          <attribute name="mshack_ou" />
+          <attribute name="mshack_registrationdate" />
+          <attribute name="emailaddress" />
+          <attribute name="mshack_registrationid" />
+          <attribute name="mshack_hackeventid" />
+          <attribute name="mshack_systemuserid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="mshack_hackevent" alias="ad" link-type="inner" from="mshack_hackeventid" to="mshack_hackeventid">
+            <filter type="and">
+              <condition attribute="mshack_iscurrent" operator="eq" value="1" />
+            </filter>
+          </link-entity>
+          <order attribute="mshack_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.23</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Current Event Coaches" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Coaches for the Hack Event marked as Current" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

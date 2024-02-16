@@ -28,24 +28,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{e180a5db-1f5a-4d68-8baa-bc59779a2efc}" locklevel="0" rowspan="1" colspan="1">
+                      <cell id="{c424d966-8b29-4922-a1ca-cd77fceb9d9b}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="Teams Channel URL" languagecode="1033" />
+                          <label description="Hack Event" languagecode="1033" />
                         </labels>
-                        <control id="mshack_teamschannel" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_teamschannel" disabled="false" />
-                      </cell>
-                      <cell locklevel="0" id="{e9bb46a5-7832-4c48-be53-e9796746e499}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{dd62ae91-050c-4e77-8f25-ece01408abe4}" locklevel="0" colspan="1" rowspan="1">
-                        <labels>
-                          <label description="Teams Channel Name" languagecode="1033" />
-                        </labels>
-                        <control id="mshack_teamschannelname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_teamschannelname" disabled="true" />
+                        <control id="mshack_hackevent" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_hackevent" disabled="false" />
                       </cell>
                       <cell locklevel="0" id="{56cb57fe-1cbe-4c16-8236-de47c9f74a9a}" rowspan="4" colspan="1" auto="false">
                         <labels>
@@ -75,20 +62,26 @@
                         <control id="mshack_coachname" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="mshack_coachname" disabled="false" uniqueid="{a4df9404-d15e-4a04-ac1c-70d6c8acc4ef}" />
                       </cell>
                     </row>
-                    <row>
-                      <cell id="{e894f65b-1e0d-4594-8916-90b935e17384}" locklevel="0" colspan="1" rowspan="1" visible="false">
-                        <labels>
-                          <label description="Account" languagecode="1033" />
-                        </labels>
-                        <control id="mshack_accountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_accountid" disabled="false" />
-                      </cell>
-                    </row>
+                    <row />
                     <row>
                       <cell id="{a108efc3-8285-4a5a-a486-3c470ba1eab9}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
                           <label description="Presentation Timeslot" languagecode="1033" />
                         </labels>
                         <control id="mshack_presentationtimeslot" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mshack_presentationtimeslot" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e894f65b-1e0d-4594-8916-90b935e17384}" locklevel="0" colspan="1" rowspan="1" visible="true">
+                        <labels>
+                          <label description="Account" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_accountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="mshack_accountid" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{e2d6abab-b295-465c-83f9-313a33eda167}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
                       </cell>
                     </row>
                     <row>
@@ -103,10 +96,49 @@
                           </parameters>
                         </control>
                       </cell>
-                      <cell locklevel="0" id="{e2d6abab-b295-465c-83f9-313a33eda167}">
+                      <cell locklevel="0" id="{f46e8a9c-97d7-4322-ace0-d7801a1a905c}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{78e2dd97-532a-43db-8046-dbd42686aa5d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{e180a5db-1f5a-4d68-8baa-bc59779a2efc}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Teams Channel URL" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_teamschannel" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_teamschannel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{0f1d4722-7b9f-4229-afc6-62050f1585ce}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{dd62ae91-050c-4e77-8f25-ece01408abe4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Teams Channel Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_teamschannelname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_teamschannelname" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{9437ac5c-25c1-452c-9a4f-fa0c437ca626}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b028fffc-23b7-4222-a313-97a5b66cd71a}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Registration Date" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_registrationdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="mshack_registrationdate" disabled="false" />
                       </cell>
                     </row>
                   </rows>

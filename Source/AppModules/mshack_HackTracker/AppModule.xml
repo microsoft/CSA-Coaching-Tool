@@ -15,6 +15,7 @@
     <AppModuleComponent type="1" schemaName="mshack_activityattendance" />
     <AppModuleComponent type="1" schemaName="mshack_coach" />
     <AppModuleComponent type="1" schemaName="mshack_hackactivities" />
+    <AppModuleComponent type="1" schemaName="mshack_hackevent" />
     <AppModuleComponent type="1" schemaName="mshack_hackteam" />
     <AppModuleComponent type="1" schemaName="mshack_usecase" />
     <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000000666000}" />

@@ -51,6 +51,14 @@
                         <control id="mshack_teamschannel" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_teamschannel" disabled="false" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{daf689b1-26b1-49f0-bedb-a4108080b595}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Registration Date" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_registrationdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="mshack_registrationdate" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>

@@ -10,8 +10,11 @@
     <layoutxml>
       <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
         <row name="result" id="mshack_hackactivitiesid">
-          <cell name="mshack_name" width="300" />
+          <cell name="mshack_name" width="216" />
+          <cell name="mshack_hackeventid" width="269" />
           <cell name="createdon" width="125" />
+          <cell name="modifiedby" width="112" />
+          <cell name="modifiedon" width="113" />
         </row>
       </grid>
     </layoutxml>
@@ -22,10 +25,14 @@
           <attribute name="mshack_hackactivitiesid" />
           <attribute name="mshack_name" />
           <attribute name="createdon" />
-          <order attribute="mshack_name" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="1" />
           </filter>
+          <attribute name="modifiedby" />
+          <attribute name="modifiedon" />
+          <attribute name="mshack_hackeventid" />
+          <order attribute="mshack_hackeventid" descending="false" />
+          <order attribute="mshack_name" descending="false" />
         </entity>
       </fetch>
     </fetchxml>

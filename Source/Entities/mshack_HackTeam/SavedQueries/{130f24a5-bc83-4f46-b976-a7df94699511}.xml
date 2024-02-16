@@ -11,12 +11,15 @@
       <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
         <row name="result" id="mshack_hackteamid">
           <cell name="mshack_name" width="206" />
+          <cell name="mshack_hackevent" width="200" />
           <cell name="mshack_coachname" width="162" />
+          <cell name="mshack_teamschannelname" width="164" />
           <cell name="mshack_teamschannel" width="300" />
           <cell name="mshack_accountid" width="180" />
           <cell name="createdon" width="125" />
           <cell name="modifiedon" width="113" />
           <cell name="modifiedby" width="112" />
+          <cell name="mshack_registrationdate" width="139" />
         </row>
       </grid>
     </layoutxml>
@@ -39,6 +42,9 @@
           <attribute name="mshack_accountid" />
           <attribute name="modifiedon" />
           <attribute name="modifiedby" />
+          <attribute name="mshack_hackevent" />
+          <attribute name="mshack_teamschannelname" />
+          <attribute name="mshack_registrationdate" />
         </entity>
       </fetch>
     </fetchxml>
