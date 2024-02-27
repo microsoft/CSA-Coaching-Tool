@@ -1,0 +1,154 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_excelonlinebusiness": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "mshack_sharedexcelonlinebusiness_7f429"
+        },
+        "api": {
+          "name": "shared_excelonlinebusiness"
+        }
+      },
+      "shared_commondataserviceforapps_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "mshack_sharedcommondataserviceforapps_11fd8"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "Hack_Team_Channel_URL_create_or_update": {
+          "metadata": {
+            "operationMetadataId": "a3721a60-82ae-4294-8bbb-4363e5f23a7b"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps_1",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "mshack_hackteam",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "mshack_teamschannel"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Get_channel_row": {
+              "runAfter": {},
+              "metadata": {
+                "01UCEABXADOHP47LENUBBLAJ2KGRDPNVCT": "/Documents/Internal Team Productivity Development/Hack Tracker/ShortChannelWebURLs 3.xlsx",
+                "operationMetadataId": "c1d7abf0-8766-4b4e-ba1c-1e9c58e71050",
+                "tableId": "{7F383F30-72A1-4979-97E7-AD3301FCA029}"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_excelonlinebusiness",
+                  "operationId": "GetItem",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_excelonlinebusiness"
+                },
+                "parameters": {
+                  "source": "me",
+                  "drive": "b!wIpoHX1GP026LzgdOk1AR3gzpQbx-8lBuzgIE3nSLkUAtKKn2YB_R7JT6C5ZsI8g",
+                  "file": "01UCEABXADOHP47LENUBBLAJ2KGRDPNVCT",
+                  "table": "{7F383F30-72A1-4979-97E7-AD3301FCA029}",
+                  "idColumn": "WebUrl",
+                  "id": "@triggerOutputs()?['body/mshack_teamschannel']"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Set_channel_name_on_hack_team": {
+              "runAfter": {
+                "Get_channel_row": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "41b7530b-d85e-4428-8c9a-7fb774ef3034"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps_1",
+                  "operationId": "UpdateRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "mshack_hackteams",
+                  "recordId": "@triggerOutputs()?['body/mshack_hackteamid']",
+                  "item/mshack_teamschannelname": "@outputs('Get_channel_row')?['body/ChanName']"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {},
+          "else": {
+            "actions": {
+              "Clear_channel_name_on_hack_team": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "41b7530b-d85e-4428-8c9a-7fb774ef3034"
+                },
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "host": {
+                    "connectionName": "shared_commondataserviceforapps_1",
+                    "operationId": "UpdateRecord",
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                  },
+                  "parameters": {
+                    "entityName": "mshack_hackteams",
+                    "recordId": "@triggerOutputs()?['body/mshack_hackteamid']",
+                    "item/mshack_teamschannelname": "@null"
+                  },
+                  "authentication": "@parameters('$authentication')"
+                }
+              }
+            }
+          },
+          "expression": {
+            "not": {
+              "equals": [
+                "@triggerOutputs()?['body/mshack_teamschannel']",
+                null
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "e4069bfe-bcde-43e0-88a0-8224b0683078"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

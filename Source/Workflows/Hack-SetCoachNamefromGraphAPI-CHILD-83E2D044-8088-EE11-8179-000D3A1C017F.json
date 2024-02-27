@@ -1,0 +1,317 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_office365users_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "mshack_sharedoffice365users_61bd2"
+        },
+        "api": {
+          "name": "shared_office365users"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "mshack_sharedcommondataserviceforapps_11fd8"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_teams": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "mshack_sharedteams_1de7f"
+        },
+        "api": {
+          "name": "shared_teams"
+        }
+      },
+      "shared_powerplatformforadmins": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "mshack_sharedpowerplatformforadmins_a6efa"
+        },
+        "api": {
+          "name": "shared_powerplatformforadmins"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "d302f2a2-e243-4360-95ce-46c68014476a"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "CoachGUID",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "email",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "text_1"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Get_user_profile_(V2)": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "bd19d070-e57d-49fb-b55c-2d38af47796e"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365users_1",
+              "operationId": "UserProfile_V2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365users"
+            },
+            "parameters": {
+              "id": "@triggerBody()['text_1']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Check_User_Found": {
+          "actions": {
+            "Get_System_User": {
+              "runAfter": {
+                "Force_Sync_user": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "44ab013c-7651-43ff-9f82-717544c2b97f"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "ListRecords",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "systemusers",
+                  "$filter": "domainname eq '@{outputs('Get_user_profile_(V2)')?['body/userPrincipalName']}'",
+                  "$top": 1
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Add_Coach_to_CSRB_Team_(for_access)": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "dc2be261-c0f2-4d69-8132-4d2d44936704"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_teams",
+                  "operationId": "AddMemberToTeam",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams"
+                },
+                "parameters": {
+                  "teamId": "fc20461a-f388-44b7-8291-e4c711631a48",
+                  "body/userId": "@outputs('Get_user_profile_(V2)')?['body/userPrincipalName']"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "EnvironmentID": {
+              "runAfter": {
+                "Add_Coach_to_CSRB_Team_(for_access)": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "7f36ded0-64e6-415f-a49e-2193641e3f0c"
+              },
+              "type": "Compose",
+              "inputs": "@workflow()['tags']['environmentName']"
+            },
+            "Force_Sync_user": {
+              "runAfter": {
+                "EnvironmentID": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "21b4e9df-3916-41d4-ae22-48d895ed1e0a"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_powerplatformforadmins",
+                  "operationId": "Add-AdminPowerAppsSyncUser",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_powerplatformforadmins"
+                },
+                "parameters": {
+                  "environment": "@outputs('EnvironmentID')",
+                  "body/ObjectId": "@outputs('Get_user_profile_(V2)')?['body/id']",
+                  "api-version": "2019-05-01"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "User_ID": {
+              "runAfter": {
+                "Get_System_User": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "ea0dffbd-a406-4144-bee6-40c064adf3ed"
+              },
+              "type": "Compose",
+              "inputs": "@First(outputs('Get_System_User')?['body/value'])['systemuserid']"
+            },
+            "Update_Coach_record_-_including_User": {
+              "runAfter": {
+                "Current_Hack_Event_ID": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "ac6abf90-a4c4-4fa3-b159-a32b7574b957"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "UpdateRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "mshack_coachs",
+                  "recordId": "@triggerBody()['text']",
+                  "item/mshack_name": "@outputs('Get_user_profile_(V2)')?['body/displayName']",
+                  "item/mshack_HackEventId@odata.bind": "mshack_hackevents/@{outputs('Current_Hack_Event_ID')}",
+                  "item/mshack_SystemUserId@odata.bind": "systemusers/@{outputs('User_ID')}"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Get_Current_Hack_Event": {
+              "runAfter": {
+                "User_ID": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "3839e77a-2ee0-461a-beee-3492011f1507"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "ListRecords",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "mshack_hackevents",
+                  "$filter": "mshack_iscurrent eq true"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Current_Hack_Event_ID": {
+              "runAfter": {
+                "Get_Current_Hack_Event": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "3c48ab98-dd2c-4e32-bba7-cd228080e8cb"
+              },
+              "type": "Compose",
+              "inputs": "@First(outputs('Get_Current_Hack_Event')?['body/value'])['mshack_hackeventid']"
+            }
+          },
+          "runAfter": {
+            "Get_user_profile_(V2)": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Terminate": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "67e013f1-0eae-442d-b65c-2c6b689f7780"
+                },
+                "type": "Terminate",
+                "inputs": {
+                  "runStatus": "Failed",
+                  "runError": {
+                    "message": "User not found"
+                  }
+                }
+              }
+            }
+          },
+          "expression": {
+            "not": {
+              "equals": [
+                "@outputs('Get_user_profile_(V2)')?['body/displayName']",
+                null
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "ee56da9c-e118-4d83-a088-810d64a9e684"
+          },
+          "type": "If"
+        },
+        "Response": {
+          "runAfter": {
+            "Check_User_Found": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "ac99af70-7122-4b7c-8880-55e428efad9e"
+          },
+          "type": "Response",
+          "kind": "Http",
+          "inputs": {
+            "statusCode": 200
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

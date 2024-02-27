@@ -1,11 +1,10 @@
 # AUTH SNIPPETS
-pac auth create --url https://hlstechreviewdev.crm.dynamics.com/ --name TLCRevewBoardDev
-pac auth create --url https://hlstechreview.crm.dynamics.com/ --name TLCRevewBoardProd
-pac auth create --url https://org3f9e0cf9.crm.dynamics.com/ --name ManagedAzureHackDev
+pac auth create --environment https://hlstechreviewdev.crm.dynamics.com/
+pac auth create --environment https://hlstechreview.crm.dynamics.com/
 
 pac auth list
 pac auth who
-pac auth select --index 3
+pac auth select --index 4
 # Environment variable values for saving
 # MOCK channel ID: 19:9b3390f9b3ff4eb0821164774eeaae35@thread.tacv2
 # general channel ID: 19:VZvuSWaqpI8YfBoCJ9wg5dMDhdIHaybmn6BgS7dzaZ41@thread.tacv2
@@ -15,14 +14,14 @@ pac auth select --index 3
 # EXPORT SOLUTIONS
 # Set these before running the script
 
-# $solutionDir = ".\Solutions\"
-# $solutionVersion = "1.0.0.0"
-# $newSolutionVersion = "1.0.0.1"
-# $solutionName = "HackTrackerSecurityRoles"
 $solutionDir = ".\Solutions\"
-$solutionVersion = "1.0.0.23"
-$newSolutionVersion = "1.0.0.24"
-$solutionName = "HackTracker"
+$solutionVersion = "2.0.0.0"
+$newSolutionVersion = "2.0.0.1"
+# $solutionName = "HackTracker"
+# $solutionName = "HackTrackerCore"
+# $solutionName = "HackTrackerAdminApp"
+# $solutionName = "HackTrackerSecurityRoles"
+$solutionName = "HackTrackerFlows"
 
 # The following commands execute the export using the variables above
 
@@ -36,12 +35,13 @@ pac solution create-settings -z ${solutionDir}${solutionName}-${solutionVersion}
 # IMPORT MANAGED SOLUTION
 # Set these before running the script
 
-# $solutionDir = ".\Solutions\"
-# $solutionVersion = "1.0.0.0"
-# $solutionName = "HackTrackerSecurityRoles"
 $solutionDir = ".\Solutions\"
-$solutionVersion = "1.0.0.23"
-$solutionName = "HackTracker"
+$solutionVersion = "2.0.0.0"
+# $solutionName = "HackTracker"
+# $solutionName = "HackTrackerCore"
+# $solutionName = "HackTrackerAdminApp"
+# $solutionName = "HackTrackerSecurityRoles"
+$solutionName = "HackTrackerFlows"
 
 # $settingsName = "EnvSettings.json"
 
@@ -55,10 +55,12 @@ pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_mana
 # Set these before running script
 
 $solutionDir = ".\Solutions\"
-# $solutionVersion = "1.0.0.0"
+$solutionVersion = "2.0.0.0"
+# $solutionName = "HackTracker"
+# $solutionName = "HackTrackerCore"
+# $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
-$solutionVersion = "1.0.0.23"
-$solutionName = "HackTracker"
+$solutionName = "HackTrackerFlows"
 $targetFolder = ".\Source\"
 
 pac solution unpack --zipfile ${solutionDir}${solutionName}-${solutionVersion}.zip --folder ${targetFolder}
