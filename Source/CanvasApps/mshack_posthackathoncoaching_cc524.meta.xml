@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>mshack_posthackathoncoaching_cc524</Name>
-  <AppVersion>2024-02-16T19:40:40Z</AppVersion>
+  <AppVersion>2024-02-29T01:09:46Z</AppVersion>
   <Status>Ready</Status>
-  <CreatedByClientVersion>3.24015.12.0</CreatedByClientVersion>
-  <MinClientVersion>3.24015.12.0</MinClientVersion>
-  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24015.12","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false"}</Tags>
+  <CreatedByClientVersion>3.24022.15.0</CreatedByClientVersion>
+  <MinClientVersion>3.24022.15.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24022.15","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false"}</Tags>
   <IsCdsUpgraded>0</IsCdsUpgraded>
   <GalleryItemId xsi:nil="true"></GalleryItemId>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
   <DisplayName>Post Hackathon Coaching</DisplayName>
-  <Description xsi:nil="true"></Description>
+  <Description>Defaulted Opportunity fields</Description>
   <CommitMessage xsi:nil="true"></CommitMessage>
   <Publisher xsi:nil="true"></Publisher>
-  <AuthorizationReferences>[]</AuthorizationReferences>
+  <AuthorizationReferences>[{"resourceId":"https://microsoftsales.crm.dynamics.com/"}]</AuthorizationReferences>
   <ConnectionReferences>{}</ConnectionReferences>
-  <DatabaseReferences>{}</DatabaseReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Use Cases":{"entitySetName":"mshack_usecases","logicalName":"mshack_usecase"},"Hack Teams":{"entitySetName":"mshack_hackteams","logicalName":"mshack_hackteam"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Accounts_1":{"entitySetName":"accounts","logicalName":"account"},"Coaches":{"entitySetName":"mshack_coachs","logicalName":"mshack_coach"}}},"144ba8c6-2f7f-4d20-b1be-2347aa1128a9":{"databaseDetails":{"referenceType":"External","environmentName":"144ba8c6-2f7f-4d20-b1be-2347aa1128a9","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Opportunities":{"entitySetName":"opportunities","logicalName":"opportunity"},"Accounts":{"entitySetName":"accounts","logicalName":"account"},"Users_1":{"entitySetName":"systemusers","logicalName":"systemuser"},"Territories":{"entitySetName":"territories","logicalName":"territory"},"Currencies":{"entitySetName":"transactioncurrencies","logicalName":"transactioncurrency"}}}}</DatabaseReferences>
   <AppComponents>[]</AppComponents>
   <AppComponentDependencies>[]</AppComponentDependencies>
   <CanConsumeAppPass>1</CanConsumeAppPass>
@@ -24,7 +24,7 @@
   <AdminControlBypassConsent>0</AdminControlBypassConsent>
   <EmbeddedApp xsi:nil="true"></EmbeddedApp>
   <IntroducedVersion>1.0</IntroducedVersion>
-  <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"mshack_usecase","componenttype":1},{"logicalname":"mshack_hackteam","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"account","componenttype":1},{"logicalname":"mshack_coach","componenttype":1}]}</CdsDependencies>
   <IsCustomizable>1</IsCustomizable>
   <BackgroundImageUri>/CanvasApps/mshack_posthackathoncoaching_cc524_BackgroundImageUri</BackgroundImageUri>
   <DocumentUri>/CanvasApps/mshack_posthackathoncoaching_cc524_DocumentUri.msapp</DocumentUri>

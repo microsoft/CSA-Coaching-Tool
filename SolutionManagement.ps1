@@ -17,14 +17,14 @@ pac auth select --index 4
 $solutionDir = ".\Solutions\"
 $solutionVersion = "2.0.0.0"
 $newSolutionVersion = "2.0.0.1"
-# $solutionName = "HackTracker"
 # $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
-$solutionName = "HackTrackerFlows"
+# $solutionName = "HackTrackerFlows"
+$solutionName = "HackTrackerGuidedApps"
 
 # The following commands execute the export using the variables above
-
+pac auth select --index 5
 pac solution export --path ${solutionDir}${solutionName}-${solutionVersion}.zip --name $solutionName --managed false
 pac solution export --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip --name $solutionName --managed true
 pac solution online-version --solution-name ${solutionName} --solution-version ${newSolutionVersion}
@@ -37,16 +37,16 @@ pac solution create-settings -z ${solutionDir}${solutionName}-${solutionVersion}
 
 $solutionDir = ".\Solutions\"
 $solutionVersion = "2.0.0.0"
-# $solutionName = "HackTracker"
 # $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
-$solutionName = "HackTrackerFlows"
+# $solutionName = "HackTrackerFlows"
+$solutionName = "HackTrackerGuidedApps"
 
 # $settingsName = "EnvSettings.json"
 
 # The following commands execute the export using the variables above
-
+pac auth select --index 4
 pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip
 # OR import with settings file
 # pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip --settings-file ${solutionDir}${settingsName}
@@ -56,11 +56,11 @@ pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_mana
 
 $solutionDir = ".\Solutions\"
 $solutionVersion = "2.0.0.0"
-# $solutionName = "HackTracker"
 # $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
-$solutionName = "HackTrackerFlows"
+# $solutionName = "HackTrackerFlows"
+$solutionName = "HackTrackerGuidedApps"
 $targetFolder = ".\Source\"
 
 pac solution unpack --zipfile ${solutionDir}${solutionName}-${solutionVersion}.zip --folder ${targetFolder}

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ImportExportXml version="9.2.24014.212" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
-    <UniqueName>HackTrackerFlows</UniqueName>
+    <UniqueName>HackTrackerGuidedApps</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="Hack Tracker Flows" languagecode="1033" />
+      <LocalizedName description="Hack Tracker Guided Apps" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>2.0.0.1</Version>
+    <Version>2.0.0.0</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>MSHack</UniqueName>
@@ -78,58 +78,38 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="29" id="{0721da05-e55e-ee11-be6f-000d3a314d17}" behavior="0" />
-      <RootComponent type="29" id="{1a09b78a-9888-ee11-8179-000d3a1ba0d6}" behavior="0" />
-      <RootComponent type="29" id="{4d5e0ec8-1283-ee11-8179-000d3a190bdf}" behavior="0" />
-      <RootComponent type="29" id="{7fd9fba2-9788-ee11-8179-000d3a1ba0d6}" behavior="0" />
-      <RootComponent type="29" id="{83e2d044-8088-ee11-8179-000d3a1c017f}" behavior="0" />
-      <RootComponent type="29" id="{9fefa15d-9690-ee11-8179-000d3a1ba0d6}" behavior="0" />
-      <RootComponent type="29" id="{d0e4aae0-9790-ee11-8178-000d3a102604}" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_accountteamtest_e43b5" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_hackathoncoaching_ca72d" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_posthackathoncoaching_cc524" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="1" schemaName="mshack_activityattendance" displayName="Activity Attendance" solution="Active" />
-        <Dependent type="29" displayName="Hack - Create Activity Attendance records for new Attendees" id="{0721da05-e55e-ee11-be6f-000d3a314d17}" />
+        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Trigger Set Coach Name - On Coach Create" id="{1a09b78a-9888-ee11-8179-000d3a1ba0d6}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Coach Name to Email" id="{4d5e0ec8-1283-ee11-8179-000d3a190bdf}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Trigger Set Coach Name - Manual" id="{7fd9fba2-9788-ee11-8179-000d3a1ba0d6}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Coach Name from GraphAPI - CHILD" id="{83e2d044-8088-ee11-8179-000d3a1c017f}" />
+        <Dependent type="300" schemaName="mshack_posthackathoncoaching_cc524" displayName="Post Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="mshack_hackactivities" displayName="Hack Activities" solution="Active" />
-        <Dependent type="29" displayName="Hack - Create Activity Attendance records for new Attendees" id="{0721da05-e55e-ee11-be6f-000d3a314d17}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_hackevent" displayName="Hack Event" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Coach Name from GraphAPI - CHILD" id="{83e2d044-8088-ee11-8179-000d3a1c017f}" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="mshack_hackteam" displayName="Hack Team" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Hack Team Channel Name on Channel URL create or change" id="{9fefa15d-9690-ee11-8179-000d3a1ba0d6}" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="mshack_hackteam" displayName="Hack Team" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set All Hack Team Channel Names - Manual" id="{d0e4aae0-9790-ee11-8178-000d3a102604}" />
+        <Dependent type="300" schemaName="mshack_posthackathoncoaching_cc524" displayName="Post Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="emailaddress" displayName="Email Address" parentSchemaName="mshack_coach" parentDisplayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Coach Name to Email" id="{4d5e0ec8-1283-ee11-8179-000d3a190bdf}" />
+        <Required type="1" schemaName="mshack_usecase" displayName="Use Case" solution="Active" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="mshack_teamschannel" displayName="Teams Channel URL" parentSchemaName="mshack_hackteam" parentDisplayName="Hack Team" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Hack Team Channel Name on Channel URL create or change" id="{9fefa15d-9690-ee11-8179-000d3a1ba0d6}" />
+        <Required type="1" schemaName="mshack_usecase" displayName="Use Case" solution="Active" />
+        <Dependent type="300" schemaName="mshack_posthackathoncoaching_cc524" displayName="Post Hackathon Coaching" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

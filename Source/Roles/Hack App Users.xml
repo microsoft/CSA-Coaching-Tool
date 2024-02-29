@@ -19,7 +19,6 @@
     <RolePrivilege name="prvAppendTomshack_HackTeam" level="Global" />
     <RolePrivilege name="prvAppendTomshack_UseCase" level="Global" />
     <RolePrivilege name="prvCreateAccount" level="Global" />
-    <RolePrivilege name="prvCreateContact" level="Global" />
     <RolePrivilege name="prvCreatemshack_HackTeam" level="Global" />
     <RolePrivilege name="prvCreatemshack_UseCase" level="Global" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />

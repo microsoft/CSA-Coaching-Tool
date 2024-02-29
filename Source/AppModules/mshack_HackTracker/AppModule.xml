@@ -44,10 +44,10 @@
     <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
   </AppModuleRoleMaps>
   <LocalizedNames>
-    <LocalizedName description="Hack Tracker" languagecode="1033" />
+    <LocalizedName description="Hack Tracker Administration" languagecode="1033" />
   </LocalizedNames>
   <Descriptions>
-    <Description description="Hack Tracker enables business users to quickly track and manage hack event participation and associated contacts." languagecode="1033" />
+    <Description description="Hack Tracker enables business users to quickly track and manage hack event participation, teams, and use cases." languagecode="1033" />
   </Descriptions>
   <appelements>
     <appelement uniquename="mshack_mshack_HackTracker_canvasappid_mshack_accountlookup_256cb">
