@@ -12,8 +12,8 @@
         <row name="result" id="mshack_coachid">
           <cell name="mshack_name" width="120" />
           <cell name="mshack_hackeventid" width="106" />
-          <cell name="mshack_timezoneevent" width="134" />
           <cell name="mshack_preferredcustomers" width="165" />
+          <cell name="mshack_timezoneevent" width="134" />
           <cell name="emailaddress" width="123" />
           <cell name="mshack_ou" width="100" />
           <cell name="mshack_systemuserid" width="112" />

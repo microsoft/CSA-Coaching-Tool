@@ -59,7 +59,7 @@
                         <labels>
                           <label description="Coach(es)" languagecode="1033" />
                         </labels>
-                        <control id="mshack_coachname" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="mshack_coachname" disabled="false" uniqueid="{a4df9404-d15e-4a04-ac1c-70d6c8acc4ef}" />
+                        <control id="mshack_coachname" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="mshack_coachname" disabled="false" uniqueid="{9ce254e3-5784-437c-a3f4-f00fa3baf8ca}" />
                       </cell>
                     </row>
                     <row />
@@ -282,46 +282,6 @@
         <Everyone />
       </DisplayConditions>
       <controlDescriptions>
-        <controlDescription forControl="{a4df9404-d15e-4a04-ac1c-70d6c8acc4ef}">
-          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
-            <parameters>
-              <datafieldname>mshack_coachname</datafieldname>
-            </parameters>
-          </customControl>
-          <customControl formFactor="0" name="dce_DCEPCF.PolyLookup">
-            <parameters>
-              <boundField type="Multiple">mshack_coachname</boundField>
-              <relationshipType type="Enum" static="true">0</relationshipType>
-              <relationship type="SingleLine.Text" static="true">mshack_HackTeam_mshack_Coach_mshack_Coach</relationship>
-              <outputSelected type="Enum" static="true">1</outputSelected>
-              <lookupView type="SingleLine.Text" static="true">Active Coaches</lookupView>
-              <itemLimit type="Whole.None" static="true">10</itemLimit>
-              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
-            </parameters>
-          </customControl>
-          <customControl formFactor="2" name="dce_DCEPCF.PolyLookup">
-            <parameters>
-              <boundField type="Multiple">mshack_coachname</boundField>
-              <relationshipType type="Enum" static="true">0</relationshipType>
-              <relationship type="SingleLine.Text" static="true">mshack_HackTeam_mshack_Coach_mshack_Coach</relationship>
-              <outputSelected type="Enum" static="true">1</outputSelected>
-              <lookupView type="SingleLine.Text" static="true">Active Coaches</lookupView>
-              <itemLimit type="Whole.None" static="true">10</itemLimit>
-              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
-            </parameters>
-          </customControl>
-          <customControl formFactor="1" name="dce_DCEPCF.PolyLookup">
-            <parameters>
-              <boundField type="Multiple">mshack_coachname</boundField>
-              <relationshipType type="Enum" static="true">0</relationshipType>
-              <relationship type="SingleLine.Text" static="true">mshack_HackTeam_mshack_Coach_mshack_Coach</relationship>
-              <outputSelected type="Enum" static="true">1</outputSelected>
-              <lookupView type="SingleLine.Text" static="true">Active Coaches</lookupView>
-              <itemLimit type="Whole.None" static="true">10</itemLimit>
-              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
-            </parameters>
-          </customControl>
-        </controlDescription>
         <controlDescription forControl="{19c50087-ce9c-423e-b2fa-0e43177523cf}">
           <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
             <parameters>
@@ -414,6 +374,43 @@
               <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
               <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
               <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{9ce254e3-5784-437c-a3f4-f00fa3baf8ca}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>mshack_coachname</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="dce_DCEPCF.PolyLookup">
+            <parameters>
+              <boundField type="Multiple">mshack_coachname</boundField>
+              <relationshipType type="Enum" static="true">0</relationshipType>
+              <relationship type="SingleLine.Text" static="true">HackTeam_mshack_Coach_mshack_Coach</relationship>
+              <outputSelected type="Enum" static="true">1</outputSelected>
+              <lookupView type="SingleLine.Text" static="true">Current Event Coaches</lookupView>
+              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="dce_DCEPCF.PolyLookup">
+            <parameters>
+              <boundField type="Multiple">mshack_coachname</boundField>
+              <relationshipType type="Enum" static="true">0</relationshipType>
+              <relationship type="SingleLine.Text" static="true">HackTeam_mshack_Coach_mshack_Coach</relationship>
+              <outputSelected type="Enum" static="true">1</outputSelected>
+              <lookupView type="SingleLine.Text" static="true">Current Event Coaches</lookupView>
+              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="dce_DCEPCF.PolyLookup">
+            <parameters>
+              <boundField type="Multiple">mshack_coachname</boundField>
+              <relationshipType type="Enum" static="true">0</relationshipType>
+              <relationship type="SingleLine.Text" static="true">HackTeam_mshack_Coach_mshack_Coach</relationship>
+              <outputSelected type="Enum" static="true">1</outputSelected>
+              <lookupView type="SingleLine.Text" static="true">Current Event Coaches</lookupView>
+              <allowQuickCreate type="Enum" static="true">0</allowQuickCreate>
             </parameters>
           </customControl>
         </controlDescription>

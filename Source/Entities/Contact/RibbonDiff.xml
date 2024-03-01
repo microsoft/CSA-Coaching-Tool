@@ -3,25 +3,16 @@
   <CustomActions>
     <HideCustomAction HideActionId="cjet.Mscrm.Form.contact.AddConnection.Hide" Location="Mscrm.Form.contact.AddConnection" />
     <HideCustomAction HideActionId="cjet.Mscrm.Form.contact.Assign.Hide" Location="Mscrm.Form.contact.Assign" />
-    <HideCustomAction HideActionId="cjet.Mscrm.Form.contact.Deactivate.Hide" Location="Mscrm.Form.contact.Deactivate" />
-    <HideCustomAction HideActionId="cjet.Mscrm.Form.contact.NewRecord.Hide" Location="Mscrm.Form.contact.NewRecord" />
     <HideCustomAction HideActionId="cjet.Mscrm.Form.contact.NewRecordForBPFEntity.Hide" Location="Mscrm.Form.contact.NewRecordForBPFEntity" />
     <HideCustomAction HideActionId="cjet.Mscrm.Form.contact.Reports.Hide" Location="Mscrm.Form.contact.Reports" />
     <HideCustomAction HideActionId="cjet.Mscrm.Form.contact.WordTemplate.Hide" Location="Mscrm.Form.contact.WordTemplate" />
-    <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.Activate.Hide" Location="Mscrm.HomepageGrid.contact.Activate" />
-    <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.Assign.Hide" Location="Mscrm.HomepageGrid.contact.Assign" />
-    <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.Deactivate.Hide" Location="Mscrm.HomepageGrid.contact.Deactivate" />
     <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.Detect.Hide" Location="Mscrm.HomepageGrid.contact.Detect" />
     <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.DocumentTemplate.Hide" Location="Mscrm.HomepageGrid.contact.DocumentTemplate" />
     <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.MBPF.ConvertTo.Hide" Location="Mscrm.HomepageGrid.contact.MBPF.ConvertTo" />
     <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.MergeRecords.Hide" Location="Mscrm.HomepageGrid.contact.MergeRecords" />
-    <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.NewRecord.Hide" Location="Mscrm.HomepageGrid.contact.NewRecord" />
     <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.NewRecordForBPFEntity.Hide" Location="Mscrm.HomepageGrid.contact.NewRecordForBPFEntity" />
     <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.RunReport.Hide" Location="Mscrm.HomepageGrid.contact.RunReport" />
     <HideCustomAction HideActionId="cjet.Mscrm.HomepageGrid.contact.WordTemplate.Hide" Location="Mscrm.HomepageGrid.contact.WordTemplate" />
-    <HideCustomAction HideActionId="cjet.Mscrm.SubGrid.contact.Activate.Hide" Location="Mscrm.SubGrid.contact.Activate" />
-    <HideCustomAction HideActionId="cjet.Mscrm.SubGrid.contact.AddNewStandard.Hide" Location="Mscrm.SubGrid.contact.AddNewStandard" />
-    <HideCustomAction HideActionId="cjet.Mscrm.SubGrid.contact.Deactivate.Hide" Location="Mscrm.SubGrid.contact.Deactivate" />
     <HideCustomAction HideActionId="cjet.Mscrm.SubGrid.contact.Detect.Hide" Location="Mscrm.SubGrid.contact.Detect" />
     <HideCustomAction HideActionId="cjet.Mscrm.SubGrid.contact.MergeRecords.Hide" Location="Mscrm.SubGrid.contact.MergeRecords" />
   </CustomActions>
