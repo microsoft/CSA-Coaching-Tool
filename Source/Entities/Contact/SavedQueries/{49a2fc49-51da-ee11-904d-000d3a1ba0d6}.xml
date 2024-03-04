@@ -6,7 +6,7 @@
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>0</isdefault>
-    <savedqueryid>{6f95e2b3-1f8f-ee11-8179-000d3a1c017f}</savedqueryid>
+    <savedqueryid>{49a2fc49-51da-ee11-904d-000d3a1ba0d6}</savedqueryid>
     <layoutxml>
       <grid name="resultset" jump="fullname" select="1" icon="1" preview="1">
         <row name="result" id="contactid">
@@ -46,15 +46,20 @@
           <attribute name="mshack_registrationdate" />
           <attribute name="mshack_companyname" />
           <attribute name="mshack_hackeventid" />
+          <link-entity name="mshack_hackevent" alias="ab" link-type="inner" from="mshack_hackeventid" to="mshack_hackeventid">
+            <filter type="and">
+              <condition attribute="mshack_iscurrent" operator="eq" value="1" />
+            </filter>
+          </link-entity>
         </entity>
       </fetch>
     </fetchxml>
-    <IntroducedVersion>1.0.0.20</IntroducedVersion>
+    <IntroducedVersion>2.0.0.4</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="All Registrants" languagecode="1033" />
+      <LocalizedName description="Current Event Registrants" languagecode="1033" />
     </LocalizedNames>
     <Descriptions>
-      <Description description="All registrants regardless of status or team" languagecode="1033" />
+      <Description description="All registrants regardless of status or team, for the current Hack Event" languagecode="1033" />
     </Descriptions>
   </savedquery>
 </savedqueries>

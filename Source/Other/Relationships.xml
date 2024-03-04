@@ -20,6 +20,7 @@
   <EntityRelationship Name="lk_mshack_usecase_modifiedby" />
   <EntityRelationship Name="mshack_coach_HackEventId_mshack_hackevent" />
   <EntityRelationship Name="mshack_coach_SystemUserId_systemuser" />
+  <EntityRelationship Name="mshack_contact_HackEventId_mshack_hackevent" />
   <EntityRelationship Name="mshack_contact_HackTeamId_mshack_hackteam" />
   <EntityRelationship Name="mshack_contact_ParentCompanyId_account" />
   <EntityRelationship Name="mshack_contact_PotentialHackTeamId_mshack_hackte" />

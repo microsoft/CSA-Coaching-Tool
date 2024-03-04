@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>mshack_hackathoncoaching_ca72d</Name>
-  <AppVersion>2024-02-29T22:38:18Z</AppVersion>
+  <AppVersion>2024-03-04T18:36:24Z</AppVersion>
   <Status>Ready</Status>
   <CreatedByClientVersion>3.24022.17.0</CreatedByClientVersion>
   <MinClientVersion>3.24022.17.0</MinClientVersion>
-  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24022.17","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false","sienaVersion":"20240229T175829Z-3.24022.15.0"}</Tags>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24022.17","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false","sienaVersion":"20240229T223818Z-3.24022.17.0"}</Tags>
   <IsCdsUpgraded>0</IsCdsUpgraded>
   <GalleryItemId xsi:nil="true"></GalleryItemId>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
   <DisplayName>Hackathon Coaching</DisplayName>
-  <Description>Final version for initial release to production</Description>
+  <Description>updates to member details</Description>
   <CommitMessage xsi:nil="true"></CommitMessage>
   <Publisher xsi:nil="true"></Publisher>
   <AuthorizationReferences>[{"resourceId":"https://microsoftsales.crm.dynamics.com/"}]</AuthorizationReferences>
   <ConnectionReferences>{}</ConnectionReferences>
-  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Hack Teams":{"entitySetName":"mshack_hackteams","logicalName":"mshack_hackteam"},"Coaches":{"entitySetName":"mshack_coachs","logicalName":"mshack_coach"},"Use Cases":{"entitySetName":"mshack_usecases","logicalName":"mshack_usecase"},"Hack Activities":{"entitySetName":"mshack_hackactivitieses","logicalName":"mshack_hackactivities"},"Accounts":{"entitySetName":"accounts","logicalName":"account"},"Contacts":{"entitySetName":"contacts","logicalName":"contact"}}},"144ba8c6-2f7f-4d20-b1be-2347aa1128a9":{"databaseDetails":{"referenceType":"External","environmentName":"144ba8c6-2f7f-4d20-b1be-2347aa1128a9","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Opportunities":{"entitySetName":"opportunities","logicalName":"opportunity"},"Accounts_1":{"entitySetName":"accounts","logicalName":"account"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Territories":{"entitySetName":"territories","logicalName":"territory"},"AccountTeams":{"entitySetName":"msp_accountteams","logicalName":"msp_accountteam"}}}}</DatabaseReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Hack Teams":{"entitySetName":"mshack_hackteams","logicalName":"mshack_hackteam"},"Coaches":{"entitySetName":"mshack_coachs","logicalName":"mshack_coach"},"Use Cases":{"entitySetName":"mshack_usecases","logicalName":"mshack_usecase"},"Hack Activities":{"entitySetName":"mshack_hackactivitieses","logicalName":"mshack_hackactivities"},"Accounts":{"entitySetName":"accounts","logicalName":"account"},"Contacts":{"entitySetName":"contacts","logicalName":"contact"},"Hack Events":{"entitySetName":"mshack_hackevents","logicalName":"mshack_hackevent"}}},"144ba8c6-2f7f-4d20-b1be-2347aa1128a9":{"databaseDetails":{"referenceType":"External","environmentName":"144ba8c6-2f7f-4d20-b1be-2347aa1128a9","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Opportunities":{"entitySetName":"opportunities","logicalName":"opportunity"},"Accounts_1":{"entitySetName":"accounts","logicalName":"account"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"},"Territories":{"entitySetName":"territories","logicalName":"territory"},"AccountTeams":{"entitySetName":"msp_accountteams","logicalName":"msp_accountteam"}}}}</DatabaseReferences>
   <AppComponents>[]</AppComponents>
   <AppComponentDependencies>[]</AppComponentDependencies>
   <CanConsumeAppPass>1</CanConsumeAppPass>
@@ -24,7 +24,7 @@
   <AdminControlBypassConsent>0</AdminControlBypassConsent>
   <EmbeddedApp xsi:nil="true"></EmbeddedApp>
   <IntroducedVersion>1.0</IntroducedVersion>
-  <CdsDependencies>{"cdsdependencies":[{"logicalname":"mshack_hackteam","componenttype":1},{"logicalname":"mshack_coach","componenttype":1},{"logicalname":"mshack_usecase","componenttype":1},{"logicalname":"mshack_hackactivities","componenttype":1},{"logicalname":"account","componenttype":1},{"logicalname":"contact","componenttype":1}]}</CdsDependencies>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"mshack_hackteam","componenttype":1},{"logicalname":"mshack_coach","componenttype":1},{"logicalname":"mshack_usecase","componenttype":1},{"logicalname":"mshack_hackactivities","componenttype":1},{"logicalname":"account","componenttype":1},{"logicalname":"contact","componenttype":1},{"logicalname":"mshack_hackevent","componenttype":1}]}</CdsDependencies>
   <IsCustomizable>1</IsCustomizable>
   <BackgroundImageUri>/CanvasApps/mshack_hackathoncoaching_ca72d_BackgroundImageUri</BackgroundImageUri>
   <DocumentUri>/CanvasApps/mshack_hackathoncoaching_ca72d_DocumentUri.msapp</DocumentUri>

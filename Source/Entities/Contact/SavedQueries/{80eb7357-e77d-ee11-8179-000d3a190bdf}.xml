@@ -40,12 +40,17 @@
           <attribute name="mshack_registrationdate" />
           <attribute name="mshack_participantstatus" />
           <attribute name="mshack_companyname" />
+          <link-entity name="mshack_hackevent" alias="aa" link-type="inner" from="mshack_hackeventid" to="mshack_hackeventid">
+            <filter type="and">
+              <condition attribute="mshack_iscurrent" operator="eq" value="1" />
+            </filter>
+          </link-entity>
         </entity>
       </fetch>
     </fetchxml>
     <IntroducedVersion>1.0.0.6</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Hack Participants - Unteamed" languagecode="1033" />
+      <LocalizedName description="Hack Participants - Unteamed (Current Event)" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>
