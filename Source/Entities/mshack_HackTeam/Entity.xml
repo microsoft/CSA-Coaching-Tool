@@ -1118,6 +1118,20 @@
           </Descriptions>
         </attribute>
       </attributes>
+      <EntityKeys>
+        <EntityKey>
+          <Name>mshack_HackTeamNameKey</Name>
+          <LogicalName>mshack_hackteamnamekey</LogicalName>
+          <IntroducedVersion>2.0.0.2</IntroducedVersion>
+          <IsCustomizable>0</IsCustomizable>
+          <EntityKeyAttributes>
+            <AttributeName>mshack_name</AttributeName>
+          </EntityKeyAttributes>
+          <displaynames>
+            <displayname description="HackTeamNameKey" languagecode="1033" />
+          </displaynames>
+        </EntityKey>
+      </EntityKeys>
       <EntitySetName>mshack_hackteams</EntitySetName>
       <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
       <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>

@@ -15,13 +15,13 @@ pac auth select --index 4
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.1"
-# $newSolutionVersion = "2.0.0.2"
-# $solutionName = "HackTrackerCore"
+$solutionVersion = "2.0.0.2"
+$newSolutionVersion = "2.0.0.3"
+$solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
 # $solutionName = "HackTrackerFlows"
-$solutionName = "HackTrackerGuidedApps"
+# $solutionName = "HackTrackerGuidedApps"
 
 # The following commands execute the export using the variables above
 pac auth select --index 5
@@ -36,7 +36,7 @@ pac solution create-settings -z ${solutionDir}${solutionName}-${solutionVersion}
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.1"
+$solutionVersion = "2.0.0.2"
 $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
@@ -55,12 +55,12 @@ pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_mana
 # Set these before running script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.1"
-# $solutionName = "HackTrackerCore"
+$solutionVersion = "2.0.0.2"
+$solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
 # $solutionName = "HackTrackerFlows"
-$solutionName = "HackTrackerGuidedApps"
+#$solutionName = "HackTrackerGuidedApps"
 $targetFolder = ".\Source\"
 
 pac solution unpack --zipfile ${solutionDir}${solutionName}-${solutionVersion}.zip --folder ${targetFolder}
