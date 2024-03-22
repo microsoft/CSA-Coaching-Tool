@@ -30,7 +30,7 @@
                     <row>
                       <cell id="{9ae0847d-3328-4159-b7f6-5a598510b891}" locklevel="0" rowspan="6" colspan="1">
                         <labels>
-                          <label description="Description" languagecode="1033" />
+                          <label description="Problem Statement" languagecode="1033" />
                         </labels>
                         <control id="mshack_description" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="mshack_description" disabled="false" />
                       </cell>
@@ -39,6 +39,68 @@
                     <row />
                     <row />
                     <row />
+                    <row />
+                    <row>
+                      <cell id="{5ef7c5cd-73c5-46b8-b626-ae697236d639}" locklevel="0" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="Desired Outcome" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_desiredoutcome" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="mshack_desiredoutcome" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{9ec9e55e-72fe-4e97-a39b-43fc9a8f9890}" locklevel="0" colspan="1" rowspan="6">
+                        <labels>
+                          <label description="MVP Success Criteria" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_mvpsuccesscriteria" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="mshack_mvpsuccesscriteria" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{3e55cf21-0c2e-421a-b29b-6a857eed781f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Business Owner" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_businessowner" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_businessowner" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e579379f-472c-4647-acb1-ef6bf987532f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Business Group or Department" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_businessgroupordepartment" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="mshack_businessgroupordepartment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5e69f505-b347-40e0-8c7d-0baf4c6e2583}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="null_section_4" id="88f84ec6-41da-4b4f-8be8-3f531a7da796" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Associated Hack Team" languagecode="1033" />
+                  </labels>
+                  <rows>
                     <row />
                     <row>
                       <cell id="{d1419bd4-60b1-43e1-a646-8a3d057a1637}" locklevel="0" colspan="1" rowspan="1">
@@ -61,20 +123,8 @@
                         </control>
                       </cell>
                     </row>
-                    <row>
-                      <cell id="{5e69f505-b347-40e0-8c7d-0baf4c6e2583}" locklevel="0" colspan="1" rowspan="1" visible="false">
-                        <labels>
-                          <label description="Created On" languagecode="1033" />
-                        </labels>
-                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
-                      </cell>
-                    </row>
                   </rows>
                 </section>
-              </sections>
-            </column>
-            <column width="50%">
-              <sections>
                 <section name="_section_393" id="65e9cdcb-610f-4876-b883-85bfeed5d280" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                   <labels>
                     <label description="Use &quot;Attach Opportunity&quot; button to set these values" languagecode="1033" />
@@ -86,7 +136,7 @@
                         <labels>
                           <label description="Opportunity Name" languagecode="1033" />
                         </labels>
-                        <control id="mshack_opportunityname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_opportunityname" disabled="true" />
+                        <control id="mshack_opportunityname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_opportunityname" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -94,7 +144,7 @@
                         <labels>
                           <label description="Opportunity ID" languagecode="1033" />
                         </labels>
-                        <control id="mshack_opportunityid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_opportunityid" disabled="true" />
+                        <control id="mshack_opportunityid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_opportunityid" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -102,7 +152,15 @@
                         <labels>
                           <label description="Opportunity URL" languagecode="1033" />
                         </labels>
-                        <control id="mshack_opportunityurl" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_opportunityurl" disabled="true" />
+                        <control id="mshack_opportunityurl" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="mshack_opportunityurl" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ead48cc1-e593-47de-9183-30d06f4a5167}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity GUID" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_opportunityguid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_opportunityguid" disabled="false" />
                       </cell>
                     </row>
                   </rows>

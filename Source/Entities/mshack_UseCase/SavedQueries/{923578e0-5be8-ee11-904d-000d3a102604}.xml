@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{923578e0-5be8-ee11-904d-000d3a102604}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
+        <row name="result" id="mshack_usecaseid">
+          <cell name="mshack_name" width="165" />
+          <cell name="mshack_description" width="300" />
+          <cell name="mshack_hackteamid" width="186" />
+          <cell name="mshack_opportunityname" width="146" />
+          <cell name="mshack_opportunityid" width="127" />
+          <cell name="mshack_opportunityurl" width="140" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="mshack_usecase">
+          <attribute name="mshack_usecaseid" />
+          <attribute name="mshack_name" />
+          <attribute name="createdon" />
+          <attribute name="mshack_description" />
+          <attribute name="mshack_hackteamid" />
+          <attribute name="mshack_opportunityname" />
+          <attribute name="mshack_opportunityid" />
+          <attribute name="mshack_opportunityurl" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="mshack_hackteam" alias="aa" link-type="inner" from="mshack_hackteamid" to="mshack_hackteamid">
+            <link-entity name="mshack_hackevent" alias="ab" link-type="inner" from="mshack_hackeventid" to="mshack_hackevent">
+              <filter type="and">
+                <condition attribute="mshack_iscurrent" operator="eq" value="1" />
+              </filter>
+            </link-entity>
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2.0.0.6</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Use Cases (Current Event)" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="all use cases tied to hack teams associated with the current event" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>
