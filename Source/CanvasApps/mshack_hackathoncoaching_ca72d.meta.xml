@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>mshack_hackathoncoaching_ca72d</Name>
-  <AppVersion>2024-03-22T16:52:12Z</AppVersion>
+  <AppVersion>2024-03-22T19:27:22Z</AppVersion>
   <Status>Ready</Status>
   <CreatedByClientVersion>3.24031.27.0</CreatedByClientVersion>
   <MinClientVersion>3.24031.27.0</MinClientVersion>
@@ -10,7 +10,13 @@
   <GalleryItemId xsi:nil="true"></GalleryItemId>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
   <DisplayName>Hackathon Coaching</DisplayName>
-  <Description xsi:nil="true"></Description>
+  <Description>Fixes:
+Edit Use Case load existing record issue
+Expand/Collapse on welcome screen issue (disabled)
+Milestone count issue
+Some unused variable cleanup
+Adds:
+Added Account Name to new welcome screen</Description>
   <CommitMessage xsi:nil="true"></CommitMessage>
   <Publisher xsi:nil="true"></Publisher>
   <AuthorizationReferences>[{"resourceId":"https://microsoftsales.crm.dynamics.com/"}]</AuthorizationReferences>
