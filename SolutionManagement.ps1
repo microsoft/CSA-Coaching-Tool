@@ -15,8 +15,8 @@ pac auth select --index 4
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.6"
-$newSolutionVersion = "2.0.0.7"
+$solutionVersion = "2.0.0.8"
+$newSolutionVersion = "2.0.0.9"
 # $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
@@ -36,7 +36,7 @@ pac solution create-settings -z ${solutionDir}${solutionName}-${solutionVersion}
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.6"
+$solutionVersion = "2.0.0.8"
 # $solutionName = "HackTrackerCore"
 #$solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
@@ -55,7 +55,7 @@ pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_mana
 # Set these before running script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.6"
+$solutionVersion = "2.0.0.8"
 # $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
