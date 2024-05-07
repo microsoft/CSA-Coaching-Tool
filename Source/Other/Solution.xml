@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ImportExportXml version="9.2.24041.216" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
-    <UniqueName>HackTrackerCore</UniqueName>
+    <UniqueName>HackTrackerGuidedApps</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="Hack Tracker Core" languagecode="1033" />
+      <LocalizedName description="Hack Tracker Guided Apps" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>2.0.0.10</Version>
+    <Version>2.0.0.9</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>MSHack</UniqueName>
@@ -78,57 +78,42 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="1" schemaName="account" behavior="2" />
-      <RootComponent type="1" schemaName="contact" behavior="1" />
-      <RootComponent type="1" schemaName="mshack_activityattendance" behavior="0" />
-      <RootComponent type="1" schemaName="mshack_coach" behavior="0" />
-      <RootComponent type="1" schemaName="mshack_hackactivities" behavior="0" />
-      <RootComponent type="1" schemaName="mshack_hackevent" behavior="0" />
-      <RootComponent type="1" schemaName="mshack_hackteam" behavior="0" />
-      <RootComponent type="1" schemaName="mshack_usecase" behavior="0" />
-      <RootComponent type="1" schemaName="systemuser" behavior="2" />
-      <RootComponent type="61" schemaName="mshack_idea.png" behavior="0" />
-      <RootComponent type="61" schemaName="mshack_list-1.png" behavior="0" />
-      <RootComponent type="61" schemaName="mshack_share-2.png" behavior="0" />
-      <RootComponent type="9" schemaName="mshack_activitytype" behavior="0" />
-      <RootComponent type="9" schemaName="mshack_hackactivitystage" behavior="0" />
-      <RootComponent type="9" schemaName="mshack_hackactivitystatus" behavior="0" />
-      <RootComponent type="9" schemaName="mshack_hackparticipantstatus" behavior="0" />
-      <RootComponent type="9" schemaName="mshack_presentationtimeslot" behavior="0" />
-      <RootComponent type="9" schemaName="mshack_timezoneevent" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_accountteamtest_e43b5" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_hackathoncoaching_ca72d" behavior="0" />
+      <RootComponent type="300" schemaName="mshack_posthackathoncoaching_cc524" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="66" schemaName="dce_DCEPCF.PolyLookup" displayName="dce_DCEPCF.PolyLookup" solution="dce_pcfcomponents (1.0.5.0)" />
-        <Dependent type="60" displayName="Information" parentDisplayName="Hack Team" id="{c34e2894-bc51-4ade-93b9-3967e711548c}" />
+        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2404.1026)" />
-        <Dependent type="60" displayName="Information" parentDisplayName="Hack Team" id="{c34e2894-bc51-4ade-93b9-3967e711548c}" />
+        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
+        <Dependent type="300" schemaName="mshack_posthackathoncoaching_cc524" displayName="Post Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2404.1026)" />
-        <Dependent type="68" id="{6c84dc07-a516-4e39-889a-9c61576504ce}" />
+        <Required type="1" schemaName="mshack_hackactivities" displayName="Hack Activities" solution="Active" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2404.1026)" />
-        <Dependent type="68" id="{8eb87ee1-8989-4d12-b921-fbda02bf255f}" />
+        <Required type="1" schemaName="mshack_hackevent" displayName="Hack Event" solution="Active" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2404.1026)" />
-        <Dependent type="68" id="{a9b608f6-1d73-4725-ba3f-ed4a040bdf32}" />
+        <Required type="1" schemaName="mshack_hackteam" displayName="Hack Team" solution="Active" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2404.1026)" />
-        <Dependent type="60" displayName="Hack Participant" parentDisplayName="Contact" id="{df30b480-c95e-ee11-be6f-000d3a3140c3}" />
+        <Required type="1" schemaName="mshack_hackteam" displayName="Hack Team" solution="Active" />
+        <Dependent type="300" schemaName="mshack_posthackathoncoaching_cc524" displayName="Post Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2404.1026)" />
-        <Dependent type="68" id="{6c84dc07-a516-4e39-889a-9c61576504ce}" />
+        <Required type="1" schemaName="mshack_usecase" displayName="Use Case" solution="Active" />
+        <Dependent type="300" schemaName="mshack_hackathoncoaching_ca72d" displayName="Hackathon Coaching" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2404.1026)" />
-        <Dependent type="68" id="{f368e693-2a01-4167-ac78-3e6bb444b2c3}" />
+        <Required type="1" schemaName="mshack_usecase" displayName="Use Case" solution="Active" />
+        <Dependent type="300" schemaName="mshack_posthackathoncoaching_cc524" displayName="Post Hackathon Coaching" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
