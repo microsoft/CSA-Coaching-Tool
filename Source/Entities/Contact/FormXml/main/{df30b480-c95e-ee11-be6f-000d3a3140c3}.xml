@@ -58,6 +58,14 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{02c24b9e-124a-47b1-ae7b-8cbf566189c3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Participant Status" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_participantstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mshack_participantstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{b19749b9-20f7-41bc-95a0-7e4394ed72af}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
                           <label description="Company Name (Registered)" languagecode="1033" />
@@ -108,11 +116,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{02c24b9e-124a-47b1-ae7b-8cbf566189c3}" locklevel="0" colspan="1" rowspan="1">
+                      <cell id="{f83d6cac-633b-485b-9d20-fe3e4891356e}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="Participant Status" languagecode="1033" />
+                          <label description="Registration Status" languagecode="1033" />
                         </labels>
-                        <control id="mshack_participantstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="mshack_participantstatus" disabled="false" />
+                        <control id="mshack_registrationstatus" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_registrationstatus" disabled="true" />
                       </cell>
                     </row>
                   </rows>
