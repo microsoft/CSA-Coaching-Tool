@@ -15,8 +15,8 @@ pac auth select --index 4
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.9"
-$newSolutionVersion = "2.0.0.10"
+$solutionVersion = "2.0.0.10"
+$newSolutionVersion = "2.0.0.11"
 # $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
@@ -24,7 +24,7 @@ $newSolutionVersion = "2.0.0.10"
 $solutionName = "HackTrackerGuidedApps"
 
 # The following commands execute the export using the variables above
-pac auth select --index 5
+pac auth select --index 2
 pac solution export --path ${solutionDir}${solutionName}-${solutionVersion}.zip --name $solutionName --managed false
 pac solution export --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip --name $solutionName --managed true
 pac solution online-version --solution-name ${solutionName} --solution-version ${newSolutionVersion}
@@ -36,7 +36,7 @@ pac solution create-settings -z ${solutionDir}${solutionName}-${solutionVersion}
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.9"
+$solutionVersion = "2.0.0.10"
 # $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
@@ -46,7 +46,7 @@ $solutionName = "HackTrackerGuidedApps"
 # $settingsName = "EnvSettings.json"
 
 # The following commands execute the export using the variables above
-pac auth select --index 4
+pac auth select --index 3
 pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip
 # OR import with settings file
 # pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip --settings-file ${solutionDir}${settingsName}
@@ -55,7 +55,7 @@ pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_mana
 # Set these before running script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.9"
+$solutionVersion = "2.0.0.10"
 # $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
