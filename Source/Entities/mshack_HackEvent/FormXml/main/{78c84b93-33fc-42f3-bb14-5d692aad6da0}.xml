@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{38225049-250b-4586-a53c-489de6b33dc8}" IsUserDefined="1">
           <labels>
@@ -57,6 +57,14 @@
                           <label description="Is Current" languagecode="1033" />
                         </labels>
                         <control id="mshack_iscurrent" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="mshack_iscurrent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2bf15288-52f9-4750-a280-92c9a55db796}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="MSX Tag" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_msxtag" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_msxtag" disabled="false" />
                       </cell>
                     </row>
                   </rows>

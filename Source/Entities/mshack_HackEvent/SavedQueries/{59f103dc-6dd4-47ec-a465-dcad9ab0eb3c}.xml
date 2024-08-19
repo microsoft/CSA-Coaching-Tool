@@ -10,11 +10,12 @@
     <layoutxml>
       <grid name="resultset" jump="mshack_name" select="1" icon="1" preview="1">
         <row name="result" id="mshack_hackeventid">
-          <cell name="mshack_name" width="300" />
+          <cell name="mshack_name" width="148" />
           <cell name="createdon" width="125" />
           <cell name="mshack_startdate" width="100" />
           <cell name="mshack_enddate" width="100" />
           <cell name="mshack_iscurrent" width="100" />
+          <cell name="mshack_msxtag" width="100" />
         </row>
       </grid>
     </layoutxml>
@@ -32,6 +33,7 @@
           <attribute name="mshack_startdate" />
           <attribute name="mshack_enddate" />
           <attribute name="mshack_iscurrent" />
+          <attribute name="mshack_msxtag" />
         </entity>
       </fetch>
     </fetchxml>
