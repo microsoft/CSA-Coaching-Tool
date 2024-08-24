@@ -4,7 +4,7 @@ pac auth create --environment https://hlstechreview.crm.dynamics.com/
 
 pac auth list
 pac auth who
-pac auth select --index 4
+pac auth select --index 2
 # Environment variable values for saving
 # MOCK channel ID: 19:9b3390f9b3ff4eb0821164774eeaae35@thread.tacv2
 # general channel ID: 19:VZvuSWaqpI8YfBoCJ9wg5dMDhdIHaybmn6BgS7dzaZ41@thread.tacv2
@@ -15,13 +15,13 @@ pac auth select --index 4
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.10"
-$newSolutionVersion = "2.0.0.11"
-# $solutionName = "HackTrackerCore"
+$solutionVersion = "2.0.0.11"
+$newSolutionVersion = "2.0.0.12"
+$solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
 # $solutionName = "HackTrackerFlows"
-$solutionName = "HackTrackerGuidedApps"
+# $solutionName = "HackTrackerGuidedApps"
 
 # The following commands execute the export using the variables above
 pac auth select --index 2
@@ -36,12 +36,12 @@ pac solution create-settings -z ${solutionDir}${solutionName}-${solutionVersion}
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.10"
-# $solutionName = "HackTrackerCore"
+$solutionVersion = "2.0.0.11"
+$solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
 # $solutionName = "HackTrackerFlows"
-$solutionName = "HackTrackerGuidedApps"
+# $solutionName = "HackTrackerGuidedApps"
 
 # $settingsName = "EnvSettings.json"
 
@@ -55,12 +55,12 @@ pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_mana
 # Set these before running script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.10"
-# $solutionName = "HackTrackerCore"
+$solutionVersion = "2.0.0.11"
+$solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
 # $solutionName = "HackTrackerFlows"
-$solutionName = "HackTrackerGuidedApps"
+# $solutionName = "HackTrackerGuidedApps"
 $targetFolder = ".\Source\"
 
 pac solution unpack --zipfile ${solutionDir}${solutionName}-${solutionVersion}.zip --folder ${targetFolder}
