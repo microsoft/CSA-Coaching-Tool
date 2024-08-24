@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>mshack_hackathoncoaching_ca72d</Name>
-  <AppVersion>2024-06-05T20:18:26Z</AppVersion>
+  <AppVersion>2024-08-24T14:00:57Z</AppVersion>
   <Status>Ready</Status>
-  <CreatedByClientVersion>3.24052.29.0</CreatedByClientVersion>
-  <MinClientVersion>3.24052.29.0</MinClientVersion>
-  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24052.29","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false","sienaVersion":"20240507T153212Z-3.24044.23.0"}</Tags>
+  <CreatedByClientVersion>3.24081.10.0</CreatedByClientVersion>
+  <MinClientVersion>3.24081.10.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24081.10","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","offlineLargeFilesSupport":"false","sienaVersion":"20240823T145458Z-3.24081.10.0"}</Tags>
   <IsCdsUpgraded>0</IsCdsUpgraded>
   <GalleryItemId xsi:nil="true"></GalleryItemId>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
   <DisplayName>Hackathon Coaching</DisplayName>
-  <Description>Fix use case screen to allow all current teams (not just "my")
-Add title to account team connect screen</Description>
+  <Description>update additional members instructions</Description>
   <CommitMessage xsi:nil="true"></CommitMessage>
   <Publisher xsi:nil="true"></Publisher>
   <AuthorizationReferences>[{"resourceId":"https://microsoftsales.crm.dynamics.com/"}]</AuthorizationReferences>
