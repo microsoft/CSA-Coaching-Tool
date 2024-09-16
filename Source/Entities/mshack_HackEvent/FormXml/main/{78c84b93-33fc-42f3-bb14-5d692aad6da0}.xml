@@ -28,7 +28,15 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{1ee49719-3fe1-4e4d-84b9-230a81360714}">
+                      <cell id="{d176c11c-c20c-4ba5-bd0d-84363f4c9948}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Is Current" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_iscurrent" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="mshack_iscurrent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1ee49719-3fe1-4e4d-84b9-230a81360714}" visible="false">
                         <labels>
                           <label description="Owner" languagecode="1033" />
                         </labels>
@@ -52,11 +60,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{d176c11c-c20c-4ba5-bd0d-84363f4c9948}" locklevel="0" rowspan="1" colspan="1">
+                      <cell id="{27b19c39-7cae-4d74-ac78-8f9ef2c3d45a}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="Is Current" languagecode="1033" />
+                          <label description="External EventId" languagecode="1033" />
                         </labels>
-                        <control id="mshack_iscurrent" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="mshack_iscurrent" disabled="false" />
+                        <control id="mshack_externaleventid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_externaleventid" disabled="false" />
                       </cell>
                     </row>
                     <row>
