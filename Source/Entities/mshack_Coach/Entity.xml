@@ -1118,6 +1118,18 @@
       </attributes>
       <EntityKeys>
         <EntityKey>
+          <Name>mshack_EmailAddress</Name>
+          <LogicalName>mshack_emailaddress</LogicalName>
+          <IntroducedVersion>2.0.0.12</IntroducedVersion>
+          <IsCustomizable>0</IsCustomizable>
+          <EntityKeyAttributes>
+            <AttributeName>emailaddress</AttributeName>
+          </EntityKeyAttributes>
+          <displaynames>
+            <displayname description="Email Address" languagecode="1033" />
+          </displaynames>
+        </EntityKey>
+        <EntityKey>
           <Name>mshack_RegistrationID</Name>
           <LogicalName>mshack_registrationid</LogicalName>
           <IntroducedVersion>1.0.0.11</IntroducedVersion>
