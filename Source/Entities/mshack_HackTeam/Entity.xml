@@ -1120,6 +1120,18 @@
       </attributes>
       <EntityKeys>
         <EntityKey>
+          <Name>mshack_ExternalID</Name>
+          <LogicalName>mshack_externalid</LogicalName>
+          <IntroducedVersion>2.0.0.14</IntroducedVersion>
+          <IsCustomizable>0</IsCustomizable>
+          <EntityKeyAttributes>
+            <AttributeName>mshack_registrationid</AttributeName>
+          </EntityKeyAttributes>
+          <displaynames>
+            <displayname description="ExternalID" languagecode="1033" />
+          </displaynames>
+        </EntityKey>
+        <EntityKey>
           <Name>mshack_HackTeamNameKey</Name>
           <LogicalName>mshack_hackteamnamekey</LogicalName>
           <IntroducedVersion>2.0.0.2</IntroducedVersion>

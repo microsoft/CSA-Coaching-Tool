@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24074.218" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.24094.228" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24094.228" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24094.00228">
   <SolutionManifest>
     <UniqueName>HackTrackerCore</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Hack Tracker Core" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>2.0.0.13</Version>
+    <Version>2.0.0.14</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>MSHack</UniqueName>
@@ -108,31 +108,31 @@
         <Dependent type="60" displayName="Information" parentDisplayName="Hack Team" id="{c34e2894-bc51-4ade-93b9-3967e711548c}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2407.4020)" />
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2409.4015)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Hack Team" id="{c34e2894-bc51-4ade-93b9-3967e711548c}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2407.4020)" />
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2409.4015)" />
         <Dependent type="68" id="{6c84dc07-a516-4e39-889a-9c61576504ce}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2407.4020)" />
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2409.4015)" />
         <Dependent type="68" id="{8eb87ee1-8989-4d12-b921-fbda02bf255f}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2407.4020)" />
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2409.4015)" />
         <Dependent type="68" id="{a9b608f6-1d73-4725-ba3f-ed4a040bdf32}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2407.4020)" />
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2409.4015)" />
         <Dependent type="60" displayName="Hack Participant" parentDisplayName="Contact" id="{df30b480-c95e-ee11-be6f-000d3a3140c3}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2407.4020)" />
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2409.4015)" />
         <Dependent type="68" id="{6c84dc07-a516-4e39-889a-9c61576504ce}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2407.4020)" />
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2409.4015)" />
         <Dependent type="68" id="{f368e693-2a01-4167-ac78-3e6bb444b2c3}" />
       </MissingDependency>
     </MissingDependencies>
