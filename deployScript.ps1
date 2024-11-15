@@ -4,8 +4,8 @@ pac auth create --environment https://hlstechreview.crm.dynamics.com/ --name 'Te
 Write-Host "Starting Core Solution Deployment..."
 # EXPORT SOLUTIONS
 $solutionDir = ".\Solutions\"
-$solutionVersion = "1.0.0.15"
-$newSolutionVersion = "1.0.0.16"
+$solutionVersion = "2.0.0.15"
+$newSolutionVersion = "2.0.0.16"
 $solutionName = "HackTrackerCore"
 # The following commands execute the export using the variables above
 pac auth select --name 'Tech Review Dev'
@@ -23,8 +23,8 @@ pac solution unpack --zipfile ${solutionDir}${solutionName}-${solutionVersion}.z
 Write-Host "Starting Flow Solution Deployment..."
 # EXPORT SOLUTIONS
 $solutionDir = ".\Solutions\"
-$solutionVersion = "1.0.0.3"
-$newSolutionVersion = "1.0.0.4"
+$solutionVersion = "2.0.0.3"
+$newSolutionVersion = "2.0.0.4"
 $solutionName = "HackTrackerFlows"
 # The following commands execute the export using the variables above
 pac auth select --name 'Tech Review Dev'

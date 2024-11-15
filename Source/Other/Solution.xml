@@ -6,7 +6,7 @@
       <LocalizedName description="Hack Tracker Flows" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>2.0.0.3</Version>
+    <Version>1.0.0.4</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>MSHack</UniqueName>
@@ -78,6 +78,8 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="mshack_coach" behavior="0" />
+      <RootComponent type="1" schemaName="mshack_hackevent" behavior="0" />
       <RootComponent type="29" id="{0721da05-e55e-ee11-be6f-000d3a314d17}" behavior="0" />
       <RootComponent type="29" id="{1a09b78a-9888-ee11-8179-000d3a1ba0d6}" behavior="0" />
       <RootComponent type="29" id="{4518f7bc-0fd5-ee11-9079-000d3a1ba0d6}" behavior="0" />
@@ -95,44 +97,16 @@
         <Dependent type="29" displayName="Hack - Create Activity Attendance records for new Attendees" id="{0721da05-e55e-ee11-be6f-000d3a314d17}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Trigger Set Coach Name - On Coach Create" id="{1a09b78a-9888-ee11-8179-000d3a1ba0d6}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Coach Name to Email" id="{4d5e0ec8-1283-ee11-8179-000d3a190bdf}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Trigger Set Coach Name - Manual" id="{7fd9fba2-9788-ee11-8179-000d3a1ba0d6}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Coach Name from GraphAPI - CHILD" id="{83e2d044-8088-ee11-8179-000d3a1c017f}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_coach" displayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Push Coach to Spektra - CHILD" id="{e4f2478e-65a3-ef11-8a6a-7c1e521c7fab}" />
+        <Required type="1" schemaName="mshack_hackactivities" displayName="Hack Activities" solution="Active" />
+        <Dependent type="1" schemaName="mshack_hackevent" displayName="Hack Event" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="mshack_hackactivities" displayName="Hack Activities" solution="Active" />
         <Dependent type="29" displayName="Hack - Create Activity Attendance records for new Attendees" id="{0721da05-e55e-ee11-be6f-000d3a314d17}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="mshack_hackevent" displayName="Hack Event" solution="Active" />
-        <Dependent type="29" displayName="Hack - Associate New Team to Current Hack Event" id="{4518f7bc-0fd5-ee11-9079-000d3a1ba0d6}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_hackevent" displayName="Hack Event" solution="Active" />
-        <Dependent type="29" displayName="Hack - Associate New Registrant to Current Hack Event" id="{551975fa-51da-ee11-904d-000d3a1ba0d6}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_hackevent" displayName="Hack Event" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Coach Name from GraphAPI - CHILD" id="{83e2d044-8088-ee11-8179-000d3a1c017f}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="mshack_hackevent" displayName="Hack Event" solution="Active" />
-        <Dependent type="29" displayName="Hack - Push Coach to Spektra - CHILD" id="{e4f2478e-65a3-ef11-8a6a-7c1e521c7fab}" />
+        <Required type="1" schemaName="mshack_hackteam" displayName="Hack Team" solution="Active" />
+        <Dependent type="1" schemaName="mshack_hackevent" displayName="Hack Event" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="mshack_hackteam" displayName="Hack Team" solution="Active" />
@@ -147,20 +121,22 @@
         <Dependent type="29" displayName="Hack - Set All Hack Team Channel Names - Manual" id="{d0e4aae0-9790-ee11-8178-000d3a102604}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="emailaddress" displayName="Email Address" parentSchemaName="mshack_coach" parentDisplayName="Coach" solution="Active" />
-        <Dependent type="29" displayName="Hack - Set Coach Name to Email" id="{4d5e0ec8-1283-ee11-8179-000d3a190bdf}" />
-      </MissingDependency>
-      <MissingDependency>
         <Required type="2" schemaName="mshack_teamschannel" displayName="Teams Channel URL" parentSchemaName="mshack_hackteam" parentDisplayName="Hack Team" solution="Active" />
         <Dependent type="29" displayName="Hack - Set Hack Team Channel Name on Channel URL create or change" id="{9fefa15d-9690-ee11-8179-000d3a1ba0d6}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="connectionreference" displayName="cjet_sharedcommondataserviceforapps_9353b" solution="Active" id.connectionreferencelogicalname="cjet_sharedcommondataserviceforapps_9353b" />
-        <Dependent type="29" displayName="Hack - Push Coach to Spektra - CHILD" id="{e4f2478e-65a3-ef11-8a6a-7c1e521c7fab}" />
+        <Required type="61" schemaName="mshack_idea.png" displayName="mshack_idea.png" solution="Active" />
+        <Dependent type="1" schemaName="mshack_coach" displayName="Coach" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="connectionreference" displayName="new_sharedkeyvault_0b251" solution="Active" id.connectionreferencelogicalname="new_sharedkeyvault_0b251" />
-        <Dependent type="29" displayName="Hack - Push Coach to Spektra - CHILD" id="{e4f2478e-65a3-ef11-8a6a-7c1e521c7fab}" />
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2409.5017)">
+          <package>BaseCustomControlsCore (9.0.2409.5017)</package>
+        </Required>
+        <Dependent type="68" id="{a9b608f6-1d73-4725-ba3f-ed4a040bdf32}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="mshack_timezoneevent" displayName="Timezone Event" solution="Active" />
+        <Dependent type="2" schemaName="mshack_timezoneevent" displayName="Timezone Event" parentSchemaName="mshack_coach" parentDisplayName="Coach" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
