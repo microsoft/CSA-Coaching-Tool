@@ -36,6 +36,22 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{d90c99c9-a325-4bc0-bc86-4a825f87d8b8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="First Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_firstname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_firstname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d98f6d6-2177-4638-859d-e0541d5c1ec3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Last Name" languagecode="1033" />
+                        </labels>
+                        <control id="mshack_lastname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mshack_lastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{20b44a07-89dd-4b40-8cf9-4232557edc68}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
                           <label description="OU" languagecode="1033" />

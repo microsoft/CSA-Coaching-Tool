@@ -1,0 +1,275 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cjet_sharedcommondataserviceforapps_9353b"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_keyvault": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedkeyvault_0b251"
+        },
+        "api": {
+          "name": "shared_keyvault"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "59ac5469-4cd8-44b1-aab4-b5046db4de0d"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "description": "Please enter your input",
+                  "title": "FirstName",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                },
+                "text_1": {
+                  "description": "Please enter your input",
+                  "title": "LastName",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                },
+                "text_2": {
+                  "description": "Please enter your input",
+                  "title": "DVEventId",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                },
+                "text_3": {
+                  "description": "Please enter your input",
+                  "title": "Email",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                },
+                "text_4": {
+                  "description": "Please enter your input",
+                  "title": "DVCoachId",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "required": [
+                "text",
+                "text_1",
+                "text_2",
+                "text_3",
+                "text_4"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Get_Event_Details": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "e371ee93-0ea0-4268-9274-4d3634b0d02b"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "mshack_hackevents",
+              "recordId": "@triggerBody()?['text_2']",
+              "$select": "mshack_name, mshack_externaleventid, mshack_iscurrent"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        },
+        "Respond_to_a_Power_App_or_flow": {
+          "runAfter": {
+            "Upsert_a_row": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "0067fefc-c8a5-401f-8c6a-893b9cf417f2"
+          },
+          "type": "Response",
+          "kind": "PowerApp",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {},
+              "additionalProperties": {}
+            },
+            "statusCode": 200,
+            "body": {}
+          }
+        },
+        "Get_spektra-client-id": {
+          "runAfter": {
+            "Get_Event_Details": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f3c334c7-c7aa-457f-a791-d042dac804df"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "secretName": "spektra-client-id"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_keyvault",
+              "operationId": "GetSecret",
+              "connectionName": "shared_keyvault"
+            }
+          }
+        },
+        "Get_spektra-client-secret": {
+          "runAfter": {
+            "Get_spektra-client-id": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f3c334c7-c7aa-457f-a791-d042dac804df"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "secretName": "spektra-client-secret"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_keyvault",
+              "operationId": "GetSecret",
+              "connectionName": "shared_keyvault"
+            }
+          }
+        },
+        "Get_spektra-directory-id": {
+          "runAfter": {
+            "Get_spektra-client-secret": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f3c334c7-c7aa-457f-a791-d042dac804df"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "secretName": "spektra-directory-id"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_keyvault",
+              "operationId": "GetSecret",
+              "connectionName": "shared_keyvault"
+            }
+          }
+        },
+        "GetAuthToken": {
+          "runAfter": {
+            "Get_spektra-directory-id": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2fcaa400-1623-4bba-980b-baa662d3ab5e"
+          },
+          "type": "Http",
+          "inputs": {
+            "uri": "https://login.microsoftonline.com/@{outputs('Get_spektra-directory-id')?['body/value']}/oauth2/v2.0/token",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
+            "body": "grant_type=client_credentials\n&client_id=@{outputs('Get_spektra-client-id')?['body/value']}\n&scope=api://333a0571-8191-4e78-b53c-6ddade50045b/.default\n&client_secret=@{outputs('Get_spektra-client-secret')?['body/value']}"
+          },
+          "runtimeConfiguration": {
+            "secureData": {
+              "properties": [
+                "inputs",
+                "outputs"
+              ]
+            }
+          }
+        },
+        "Call_create_organizer_API": {
+          "runAfter": {
+            "GetAuthToken": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "0fd261fb-a7bd-46de-a485-e54ba779a57d"
+          },
+          "type": "Http",
+          "inputs": {
+            "uri": "https://api.cloudevents.ai/api/v1.0/ms-innovation-workshops/events/@{outputs('Get_Event_Details')?['body/mshack_externaleventid']}/organizers",
+            "method": "POST",
+            "headers": {
+              "Authorization": "bearer @{body('GetAuthToken')['access_token']}",
+              "Content-Type": "application/json"
+            },
+            "body": {
+              "firstName": "@{triggerBody()?['text']}",
+              "lastName": "@{triggerBody()?['text_1']}",
+              "email": "@{triggerBody()?['text_3']}",
+              "requestedBy": "cajetzer@microsoft.com"
+            }
+          }
+        },
+        "Upsert_a_row": {
+          "runAfter": {
+            "Call_create_organizer_API": [
+              "Succeeded"
+            ]
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "mshack_coachs",
+              "recordId": "@triggerBody()?['text_4']",
+              "item/mshack_registrationid": "@body('Call_create_organizer_API')['value']['organizerId']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

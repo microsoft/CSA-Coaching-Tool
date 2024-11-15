@@ -1,6 +1,6 @@
 # AUTH SNIPPETS
-pac auth create --environment https://hlstechreviewdev.crm.dynamics.com/
-pac auth create --environment https://hlstechreview.crm.dynamics.com/
+pac auth create --environment https://hlstechreviewdev.crm.dynamics.com/ --name 'Tech Review Dev'
+pac auth create --environment https://hlstechreview.crm.dynamics.com/ --name 'Tech Review Prod'
 
 pac auth list
 pac auth who
@@ -15,8 +15,8 @@ pac auth select --index 2
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.13"
-$newSolutionVersion = "2.0.0.14"
+$solutionVersion = "2.0.0.15"
+$newSolutionVersion = "2.0.0.16"
 $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
@@ -24,7 +24,7 @@ $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerGuidedApps"
 
 # The following commands execute the export using the variables above
-pac auth select --index 2
+pac auth select --name 'Tech Review Dev'
 pac solution export --path ${solutionDir}${solutionName}-${solutionVersion}.zip --name $solutionName --managed false
 pac solution export --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip --name $solutionName --managed true
 pac solution online-version --solution-name ${solutionName} --solution-version ${newSolutionVersion}
@@ -36,7 +36,7 @@ pac solution create-settings -z ${solutionDir}${solutionName}-${solutionVersion}
 # Set these before running the script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.13"
+$solutionVersion = "2.0.0.14"
 $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"
@@ -46,7 +46,7 @@ $solutionName = "HackTrackerCore"
 # $settingsName = "EnvSettings.json"
 
 # The following commands execute the export using the variables above
-pac auth select --index 3
+pac auth select --name 'Tech Review Prod'
 pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip
 # OR import with settings file
 # pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_managed.zip --settings-file ${solutionDir}${settingsName}
@@ -55,7 +55,7 @@ pac solution import --path ${solutionDir}${solutionName}-${solutionVersion}_mana
 # Set these before running script
 
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.13"
+$solutionVersion = "2.0.0.14"
 $solutionName = "HackTrackerCore"
 # $solutionName = "HackTrackerAdminApp"
 # $solutionName = "HackTrackerSecurityRoles"

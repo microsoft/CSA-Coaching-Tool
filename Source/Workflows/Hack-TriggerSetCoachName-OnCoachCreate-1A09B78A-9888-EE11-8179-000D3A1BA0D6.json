@@ -15,13 +15,13 @@
       "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
       "contentVersion": "1.0.0.0",
       "parameters": {
-        "$connections": {
-          "defaultValue": {},
-          "type": "Object"
-        },
         "$authentication": {
           "defaultValue": {},
           "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
         }
       },
       "triggers": {
@@ -31,17 +31,17 @@
           },
           "type": "OpenApiConnectionWebhook",
           "inputs": {
-            "host": {
-              "connectionName": "shared_commondataserviceforapps_1",
-              "operationId": "SubscribeWebhookTrigger",
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
-            },
             "parameters": {
               "subscriptionRequest/message": 1,
               "subscriptionRequest/entityname": "mshack_coach",
-              "subscriptionRequest/scope": 4
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/name": "1a09b78a-9888-ee11-8179-000d3a1ba0d6"
             },
-            "authentication": "@parameters('$authentication')"
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps_1"
+            }
           }
         }
       },
@@ -61,11 +61,31 @@
               "text_1": "@triggerOutputs()?['body/emailaddress']"
             }
           }
+        },
+        "Run_a_Child_Flow": {
+          "runAfter": {
+            "Call_Set_Coach_Name_child_flow": [
+              "Succeeded"
+            ]
+          },
+          "type": "Workflow",
+          "inputs": {
+            "host": {
+              "workflowReferenceName": "e4f2478e-65a3-ef11-8a6a-7c1e521c7fab"
+            },
+            "body": {
+              "text": "@body('Call_Set_Coach_Name_child_flow')?['firstname']",
+              "text_1": "@body('Call_Set_Coach_Name_child_flow')?['lastname']",
+              "text_2": "@body('Call_Set_Coach_Name_child_flow')?['dveventid']",
+              "text_3": "@triggerOutputs()?['body/emailaddress']",
+              "text_4": "@triggerOutputs()?['body/mshack_coachid']"
+            }
+          }
         }
       },
       "outputs": {}
     },
-    "templateName": ""
+    "templateName": null
   },
   "schemaVersion": "1.0.0.0"
 }

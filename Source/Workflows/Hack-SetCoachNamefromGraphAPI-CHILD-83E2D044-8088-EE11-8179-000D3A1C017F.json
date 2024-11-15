@@ -42,13 +42,13 @@
       "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
       "contentVersion": "1.0.0.0",
       "parameters": {
-        "$connections": {
-          "defaultValue": {},
-          "type": "Object"
-        },
         "$authentication": {
           "defaultValue": {},
           "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
         }
       },
       "triggers": {
@@ -93,15 +93,14 @@
           },
           "type": "OpenApiConnection",
           "inputs": {
-            "host": {
-              "connectionName": "shared_office365users_1",
-              "operationId": "UserProfile_V2",
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365users"
-            },
             "parameters": {
               "id": "@triggerBody()['text_1']"
             },
-            "authentication": "@parameters('$authentication')"
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+              "operationId": "UserProfile_V2",
+              "connectionName": "shared_office365users_1"
+            }
           }
         },
         "Check_User_Found": {
@@ -117,36 +116,33 @@
               },
               "type": "OpenApiConnection",
               "inputs": {
-                "host": {
-                  "connectionName": "shared_commondataserviceforapps",
-                  "operationId": "ListRecords",
-                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
-                },
                 "parameters": {
                   "entityName": "systemusers",
                   "$filter": "domainname eq '@{outputs('Get_user_profile_(V2)')?['body/userPrincipalName']}'",
                   "$top": 1
                 },
-                "authentication": "@parameters('$authentication')"
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "ListRecords",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
               }
             },
             "Add_Coach_to_CSRB_Team_(for_access)": {
-              "runAfter": {},
               "metadata": {
                 "operationMetadataId": "dc2be261-c0f2-4d69-8132-4d2d44936704"
               },
               "type": "OpenApiConnection",
               "inputs": {
-                "host": {
-                  "connectionName": "shared_teams",
-                  "operationId": "AddMemberToTeam",
-                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams"
-                },
                 "parameters": {
-                  "teamId": "fc20461a-f388-44b7-8291-e4c711631a48",
-                  "body/userId": "@outputs('Get_user_profile_(V2)')?['body/userPrincipalName']"
+                  "body/userId": "@outputs('Get_user_profile_(V2)')?['body/userPrincipalName']",
+                  "teamId": "fc20461a-f388-44b7-8291-e4c711631a48"
                 },
-                "authentication": "@parameters('$authentication')"
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams",
+                  "operationId": "AddMemberToTeam",
+                  "connectionName": "shared_teams"
+                }
               }
             },
             "EnvironmentID": {
@@ -172,17 +168,16 @@
               },
               "type": "OpenApiConnection",
               "inputs": {
-                "host": {
-                  "connectionName": "shared_powerplatformforadmins",
-                  "operationId": "Add-AdminPowerAppsSyncUser",
-                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_powerplatformforadmins"
-                },
                 "parameters": {
                   "environment": "@outputs('EnvironmentID')",
                   "body/ObjectId": "@outputs('Get_user_profile_(V2)')?['body/id']",
                   "api-version": "2019-05-01"
                 },
-                "authentication": "@parameters('$authentication')"
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_powerplatformforadmins",
+                  "operationId": "Add-AdminPowerAppsSyncUser",
+                  "connectionName": "shared_powerplatformforadmins"
+                }
               }
             },
             "User_ID": {
@@ -208,19 +203,20 @@
               },
               "type": "OpenApiConnection",
               "inputs": {
-                "host": {
-                  "connectionName": "shared_commondataserviceforapps",
-                  "operationId": "UpdateRecord",
-                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
-                },
                 "parameters": {
                   "entityName": "mshack_coachs",
                   "recordId": "@triggerBody()['text']",
                   "item/mshack_name": "@outputs('Get_user_profile_(V2)')?['body/displayName']",
+                  "item/mshack_firstname": "@outputs('Get_user_profile_(V2)')?['body/givenName']",
                   "item/mshack_HackEventId@odata.bind": "mshack_hackevents/@{outputs('Current_Hack_Event_ID')}",
+                  "item/mshack_lastname": "@outputs('Get_user_profile_(V2)')?['body/surname']",
                   "item/mshack_SystemUserId@odata.bind": "systemusers/@{outputs('User_ID')}"
                 },
-                "authentication": "@parameters('$authentication')"
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "UpdateRecord",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
               }
             },
             "Get_Current_Hack_Event": {
@@ -234,16 +230,15 @@
               },
               "type": "OpenApiConnection",
               "inputs": {
-                "host": {
-                  "connectionName": "shared_commondataserviceforapps",
-                  "operationId": "ListRecords",
-                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
-                },
                 "parameters": {
                   "entityName": "mshack_hackevents",
                   "$filter": "mshack_iscurrent eq true"
                 },
-                "authentication": "@parameters('$authentication')"
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "ListRecords",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
               }
             },
             "Current_Hack_Event_ID": {
@@ -257,6 +252,54 @@
               },
               "type": "Compose",
               "inputs": "@First(outputs('Get_Current_Hack_Event')?['body/value'])['mshack_hackeventid']"
+            },
+            "Success_response": {
+              "runAfter": {
+                "Update_Coach_record_-_including_User": [
+                  "Succeeded"
+                ]
+              },
+              "type": "Response",
+              "kind": "PowerApp",
+              "inputs": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "title": "Status",
+                      "type": "string",
+                      "x-ms-content-hint": "TEXT",
+                      "x-ms-dynamically-added": true
+                    },
+                    "firstname": {
+                      "title": "FirstName",
+                      "type": "string",
+                      "x-ms-content-hint": "TEXT",
+                      "x-ms-dynamically-added": true
+                    },
+                    "lastname": {
+                      "title": "LastName",
+                      "type": "string",
+                      "x-ms-content-hint": "TEXT",
+                      "x-ms-dynamically-added": true
+                    },
+                    "dveventid": {
+                      "title": "DVEventId",
+                      "type": "string",
+                      "x-ms-content-hint": "TEXT",
+                      "x-ms-dynamically-added": true
+                    }
+                  },
+                  "additionalProperties": {}
+                },
+                "statusCode": 200,
+                "body": {
+                  "status": "Success",
+                  "firstname": "@{outputs('Get_user_profile_(V2)')?['body/givenName']}",
+                  "lastname": "@{outputs('Get_user_profile_(V2)')?['body/surname']}",
+                  "dveventid": "@{outputs('Current_Hack_Event_ID')}"
+                }
+              }
             }
           },
           "runAfter": {
@@ -267,15 +310,11 @@
           "else": {
             "actions": {
               "Terminate": {
-                "runAfter": {},
-                "metadata": {
-                  "operationMetadataId": "67e013f1-0eae-442d-b65c-2c6b689f7780"
-                },
                 "type": "Terminate",
                 "inputs": {
                   "runStatus": "Failed",
                   "runError": {
-                    "message": "User not found"
+                    "message": "user not found"
                   }
                 }
               }
@@ -293,25 +332,10 @@
             "operationMetadataId": "ee56da9c-e118-4d83-a088-810d64a9e684"
           },
           "type": "If"
-        },
-        "Response": {
-          "runAfter": {
-            "Check_User_Found": [
-              "Succeeded"
-            ]
-          },
-          "metadata": {
-            "operationMetadataId": "ac99af70-7122-4b7c-8880-55e428efad9e"
-          },
-          "type": "Response",
-          "kind": "Http",
-          "inputs": {
-            "statusCode": 200
-          }
         }
       }
     },
-    "templateName": ""
+    "templateName": null
   },
   "schemaVersion": "1.0.0.0"
 }
