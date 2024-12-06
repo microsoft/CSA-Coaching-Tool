@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24101.200" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24101.00200">
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24103.228" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24103.00228">
   <Entities />
   <Roles />
   <Workflows />
@@ -12,13 +12,6 @@
   <CustomControls />
   <EntityDataProviders />
   <connectionreferences>
-    <connectionreference connectionreferencelogicalname="cjet_sharedcommondataserviceforapps_9353b">
-      <connectionreferencedisplayname>Microsoft Dataverse MilestoneAlerts-9353b</connectionreferencedisplayname>
-      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
-      <iscustomizable>1</iscustomizable>
-      <statecode>0</statecode>
-      <statuscode>1</statuscode>
-    </connectionreference>
     <connectionreference connectionreferencelogicalname="mshack_sharedcommondataserviceforapps_11fd8">
       <connectionreferencedisplayname>Microsoft Dataverse HackTracker-11fd8</connectionreferencedisplayname>
       <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>

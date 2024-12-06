@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24101.200" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24101.200" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24101.00200">
+<ImportExportXml version="9.2.24103.228" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24103.228" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24103.00228">
   <SolutionManifest>
     <UniqueName>HackTrackerFlows</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Hack Tracker Flows" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.4</Version>
+    <Version>2.0.0.4</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>MSHack</UniqueName>
@@ -82,6 +82,7 @@
       <RootComponent type="1" schemaName="mshack_hackevent" behavior="0" />
       <RootComponent type="29" id="{0721da05-e55e-ee11-be6f-000d3a314d17}" behavior="0" />
       <RootComponent type="29" id="{1a09b78a-9888-ee11-8179-000d3a1ba0d6}" behavior="0" />
+      <RootComponent type="29" id="{30a2e681-89b2-ef11-b8e9-002248288650}" behavior="0" />
       <RootComponent type="29" id="{4518f7bc-0fd5-ee11-9079-000d3a1ba0d6}" behavior="0" />
       <RootComponent type="29" id="{4d5e0ec8-1283-ee11-8179-000d3a190bdf}" behavior="0" />
       <RootComponent type="29" id="{551975fa-51da-ee11-904d-000d3a1ba0d6}" behavior="0" />
@@ -121,6 +122,10 @@
         <Dependent type="29" displayName="Hack - Set All Hack Team Channel Names - Manual" id="{d0e4aae0-9790-ee11-8178-000d3a102604}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="2" schemaName="mshack_registrationstatus" displayName="Registration Status" parentSchemaName="contact" parentDisplayName="Contact" solution="Active" />
+        <Dependent type="29" displayName="Hack - Sync Spektra Reg Status to Participant Status" id="{30a2e681-89b2-ef11-b8e9-002248288650}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="2" schemaName="mshack_teamschannel" displayName="Teams Channel URL" parentSchemaName="mshack_hackteam" parentDisplayName="Hack Team" solution="Active" />
         <Dependent type="29" displayName="Hack - Set Hack Team Channel Name on Channel URL create or change" id="{9fefa15d-9690-ee11-8179-000d3a1ba0d6}" />
       </MissingDependency>
@@ -129,8 +134,8 @@
         <Dependent type="1" schemaName="mshack_coach" displayName="Coach" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2409.5017)">
-          <package>BaseCustomControlsCore (9.0.2409.5017)</package>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2410.3010)">
+          <package>BaseCustomControlsCore (9.0.2410.3010)</package>
         </Required>
         <Dependent type="68" id="{a9b608f6-1d73-4725-ba3f-ed4a040bdf32}" />
       </MissingDependency>

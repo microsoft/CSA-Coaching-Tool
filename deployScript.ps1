@@ -23,8 +23,8 @@ pac solution unpack --zipfile ${solutionDir}${solutionName}-${solutionVersion}.z
 Write-Host "Starting Flow Solution Deployment..."
 # EXPORT SOLUTIONS
 $solutionDir = ".\Solutions\"
-$solutionVersion = "2.0.0.3"
-$newSolutionVersion = "2.0.0.4"
+$solutionVersion = "2.0.0.4"
+$newSolutionVersion = "2.0.0.5"
 $solutionName = "HackTrackerFlows"
 # The following commands execute the export using the variables above
 pac auth select --name 'Tech Review Dev'

@@ -1,0 +1,163 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "mshack_sharedcommondataserviceforapps_11fd8"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "On_Contact_registration_status_change": {
+          "metadata": {
+            "operationMetadataId": "2c3865db-5b35-430b-94a1-4f282a963fa3"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps_1",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "contact",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "mshack_registrationstatus"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "If_participant_status_is_Pending": {
+          "actions": {
+            "Switch": {
+              "runAfter": {},
+              "cases": {
+                "Approved": {
+                  "case": "Approved",
+                  "actions": {
+                    "Set_Participant_Status_to_Approved": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "6f9153d8-910d-43b6-a59c-a15245102767"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_commondataserviceforapps_1",
+                          "operationId": "UpdateRecord",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                        },
+                        "parameters": {
+                          "entityName": "contacts",
+                          "recordId": "@triggerOutputs()?['body/contactid']",
+                          "item/mshack_participantstatus": 808570001
+                        },
+                        "authentication": "@parameters('$authentication')"
+                      }
+                    }
+                  }
+                },
+                "Denied": {
+                  "case": "Denied",
+                  "actions": {
+                    "Set_Participant_Status_to_Denied": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "9423ea1d-4701-4137-bc04-cbe7b5164633"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_commondataserviceforapps_1",
+                          "operationId": "UpdateRecord",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                        },
+                        "parameters": {
+                          "entityName": "contacts",
+                          "recordId": "@triggerOutputs()?['body/contactid']",
+                          "item/mshack_participantstatus": 808570002
+                        },
+                        "authentication": "@parameters('$authentication')"
+                      }
+                    }
+                  }
+                }
+              },
+              "default": {
+                "actions": {
+                  "Terminate2": {
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "5439139d-9d70-4ae5-8b17-a68063b9a040"
+                    },
+                    "type": "Terminate",
+                    "inputs": {
+                      "runStatus": "Cancelled"
+                    }
+                  }
+                }
+              },
+              "expression": "@triggerOutputs()?['body/mshack_registrationstatus']",
+              "metadata": {
+                "operationMetadataId": "bfa9dd79-b4b5-4fa1-b747-c8c122192967"
+              },
+              "type": "Switch"
+            }
+          },
+          "runAfter": {},
+          "else": {
+            "actions": {
+              "Terminate": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "8f4d0f86-731c-46a5-a7da-fb4716ac0765"
+                },
+                "type": "Terminate",
+                "inputs": {
+                  "runStatus": "Cancelled"
+                }
+              }
+            }
+          },
+          "expression": {
+            "and": [
+              {
+                "equals": [
+                  "@triggerOutputs()?['body/mshack_participantstatus']",
+                  808570000
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "beec1f3b-3456-4c92-b942-85faa3bb71d2"
+          },
+          "type": "If",
+          "description": "808570000 = Pending"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}
